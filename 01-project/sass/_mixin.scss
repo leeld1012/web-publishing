@@ -1,0 +1,55 @@
+@mixin translate($w, $h) {
+    -webkit-transform: translate($w, $h);
+    -moz-transform: translate($w, $h);
+    -o-transform: translate($w, $h);
+    transform: translate($w, $h);
+}
+
+@mixin transition($t) {
+    -webkit-transition: all ease $t;
+    -moz-transition: all ease $t;
+    -o-transition: all ease $t;
+    transition: all ease $t;
+}
+
+@mixin scale($s) {
+    -webkit-transform: scale($s);
+    -moz-transform: scale($s);
+    -o-transform: scale($s);
+    transform: scale($s);
+}
+
+@mixin translateScale($w, $h, $s) {
+    -webkit-transform: translate($w, $h) scale($s);
+    -moz-transform: translate($w, $h) scale($s);
+    -o-transform: translate($w, $h) scale($s);
+    transform: translate($w, $h) scale($s);
+}
+
+@mixin rotate($r){
+    -webkit-transform: rotate($r);
+    -moz-transform: rotate($r);
+    -o-transform: rotate($r);
+    transform: rotate($r);
+}
+
+
+@mixin animation($n, $du) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation-name: $n;
+    animation-duration: $du;
+    animation-iteration-count: infinite;
+}
+
+@mixin decoImg($w, $h, $l, $t){
+    content: '';
+    position: absolute;
+    width: $w;
+    height: $h;
+    left: $l;
+    top: $t;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
