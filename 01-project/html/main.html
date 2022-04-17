@@ -5,13 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POP OF CAST</title>
 
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <!-- my CSS -->
   <link rel="stylesheet" href="/css/main.css">
+
+  <title>POP OF CAST</title>
+
 </head>
 
 <body>
@@ -19,649 +23,679 @@
   <!-- ########## header AREA START ########## -->
   <header>
     <div class="container">
-      <h1><a href="#">POP OF CAST</a></h1>
+      <a class="logo" href="#">
+        <img src="/images/logo.svg" alt="POP OF CAST">
+      </a>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#">More <img src="/images/arrow-down.svg" alt="화살표 버튼"></a></li>
-        </ul>
-      </nav>
+      <ul class="menu">
+        <li><a href="#about" class="about-btn">About</a></li>
+        <li><a href="#features" class="features-btn">Features</a></li>
+        <li><a href="#pricing" class="pricing-btn">Pricing</a></li>
+        <li><a href="#blog" class="blog-btn">Blog</a></li>
+      </ul>
 
       <div class="btn-group">
-        <a href="#episode" class="btn">RECENT EPISODES</a>
+        <a href="#episodes" class="btn">RECENT EPISODES</a>
         <a href="#" class="btn">SUBSCRIBE</a>
       </div>
 
     </div>
+
+    <a class="mobile-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
   </header><!-- ########## header AREA END ########## -->
 
 
-  <!-- ########## header AREA START ########## -->
-  <section id="home">
-    <div class="container-fluid">
+  <main>
+    <!-- ########## header AREA START ########## -->
+    <section id="home" data-scroll>
+      <div class="container-fluid">
 
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>Your Daily<span>Podcast</span></h2>
-        <p>We cover all kinds of categories and a weekly special guest.</p>
-        <a href="#" class="btn">SUBSCRIBE</a>
-      </div>
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h1>Your Daily<span>Podcast</span></h1>
+          <p>We cover all kinds of categories and a weekly special guest.</p>
+          <a href="#" class="btn">SUBSCRIBE</a>
+        </div>
 
-      <!-- ---------- cover slider ---------- -->
-      <div class="swiper cover-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide" onclick="window.open('#')">
-              <img src="/images/cover-1.jpg" alt="cover img1">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>Perplexed Mind</h3>
+        <!-- ---------- cover slider ---------- -->
+        <div class="swiper cover-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide" onclick="window.open('#')">
+                <img src="/images/cover-1.jpg" alt="cover img1">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>Perplexed Mind</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <img src="/images/cover-2.jpg" alt="cover img2">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>Social Class</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <img src="/images/cover-3.jpg" alt="cover img3">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>Self-confidence</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <img src="/images/cover-4.jpg" alt="cover img4">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>Women’s Rights</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <img src="/images/cover-5.jpg" alt="cover img5">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>Tesla Autopilot</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide">
+                <img src="/images/cover-6.jpg" alt="cover img6">
+                <div class="caption">
+                  <ul class="platform-icon-group">
+                    <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
+                    <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
+                  </ul>
+                  <h3>COVID-19 Endemic</h3>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="slide">
-              <img src="/images/cover-2.jpg" alt="cover img2">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>Social Class</h3>
-              </div>
-            </div>
+        </div>
+
+        <!-- ---------- support-group ---------- -->
+        <div class="support-group">
+          <h4>Supported by:</h4>
+          <img src="/images/icon-platform-spotify.svg" alt="spotify">
+          <img src="/images/icon-platform-google-podcast.svg" alt="google podcast">
+          <img src="/images/icon-platform-youtube.svg" alt="youtube">
+        </div>
+
+      </div>
+    </section><!-- ########## header AREA END ########## -->
+
+
+    <!-- ########## about AREA START ########## -->
+    <section id="about">
+      <div class="container">
+
+        <div class="title-group">
+          <h2>Talk. Listen. Get inspired by every minute of it.</h2>
+        </div>
+
+        <div class="contents">
+          <div class="content">
+            <img src="/images/about-img-1.svg" alt="thinking man">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
           </div>
-          <div class="swiper-slide">
-            <div class="slide">
-              <img src="/images/cover-3.jpg" alt="cover img3">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>Self-confidence</h3>
-              </div>
-            </div>
+          <div class="content">
+            <img src="/images/about-img-2.svg" alt="glowing light bulb">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
           </div>
-          <div class="swiper-slide">
-            <div class="slide">
-              <img src="/images/cover-4.jpg" alt="cover img4">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>Women’s Rights</h3>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide">
-              <img src="/images/cover-5.jpg" alt="cover img5">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>Tesla Autopilot</h3>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="slide">
-              <img src="/images/cover-6.jpg" alt="cover img6">
-              <div class="caption">
-                <ul class="platform-icon-group">
-                  <li><a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a></li>
-                  <li><a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a></li>
-                </ul>
-                <h3>COVID-19 Endemic</h3>
+        </div>
+
+        <div class="review wow animate__fadeInUp" data-wow-duration="1s">
+          <p><span>“</span>One of the best daily podcasts that covers every topic on Spotify.</p>
+          <div class="writer">
+            <img src="/images/profile-img-1.jpg" alt="John Smith's profile image">
+            <div class="name-platform">
+              <p>John Smith,</p>
+              <div>
+                <img class="platform-icon" src="/images/icon-spotify-color.svg" alt="스포티파이 로고">
+                <strong>Social Community Manager</strong>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- ---------- support-group ---------- -->
-      <div class="support-group">
-        <h4>Supported by:</h4>
-        <img src="/images/icon-platform-spotify.svg" alt="spotify">
-        <img src="/images/icon-platform-google-podcast.svg" alt="google podcast">
-        <img src="/images/icon-platform-youtube.svg" alt="youtube">
       </div>
-
-    </div>
-  </section><!-- ########## header AREA END ########## -->
+    </section><!-- ########## about AREA END ########## -->
 
 
-  <!-- ########## about AREA START ########## -->
-  <section id="about">
-    <div class="container">
+    <!-- ########## testimonials AREA START ########## -->
+    <section id="testimonials">
+      <div class="container-fluid">
 
-      <div class="title-group">
-        <h2>Talk. Listen. Get inspired by every minute of it.</h2>
-      </div>
-
-      <div class="contents">
-        <div class="content">
-          <img src="/images/about-img-1.svg" alt="thinking man">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.</p>
-        </div>
-        <div class="content">
-          <img src="/images/about-img-2.svg" alt="glowing light bulb">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio. </p>
-        </div>
-      </div>
-
-      <div class="review">
-        <p><span>“</span>One of the best daily podcasts that covers every topic on Spotify.</p>
-        <div class="writer">
-          <img src="/images/profile-img-1.jpg" alt="John Smith's profile image">
-          <p>John Smith,</p>
-          <img class="platform-icon" src="/images/icon-spotify-color.svg" alt="스포티파이 로고">
-          <strong>Social Community Manager</strong>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section><!-- ########## about AREA END ########## -->
-
-
-  <!-- ########## testimonials AREA START ########## -->
-  <section id="testimonials">
-    <div class="container-fluid">
-
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>What our listeners say</h2>
-        <p>Their experience throughout every platform</p>
-      </div>
-
-      <!-- ---------- review slider ---------- -->
-      <div class="swiper review-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide review">
-            <p>
-              <span>“</span>
-              Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna
-              aliqua.
-            </p>
-            <div class="writer">
-              <img src="/images/profile-img-2.jpg" alt="Luna lovegood's profile image">
-              <p>Luna lovegood,</p>
-              <img class="platform-icon" class="platform-icon" src="/images/icon-spotify-color.svg" alt="스포티파이 로고">
-              <strong>Spotify</strong>
-            </div>
-          </div>
-          <div class="swiper-slide review">
-            <p>
-              <span>“</span>
-              Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna
-              aliqua.
-            </p>
-            <div class="writer">
-              <img src="/images/profile-img-3.jpg" alt="Emily Blunt's profile image">
-              <p>Emily Blunt,</p>
-              <img class="platform-icon" src="/images/icon-google-podcast-color.svg" alt="구글 팟캐스트 로고">
-              <strong>Google Podcast</strong>
-            </div>
-          </div>
-          <div class="swiper-slide review">
-            <p>
-              <span>“</span>
-              Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore magna
-              aliqua.
-            </p>
-            <div class="writer">
-              <img src="/images/profile-img-4.jpg" alt="Mia Winters's profile image">
-              <p>Mia Winters,</p>
-              <img class="platform-icon" src="/images/icon-apple-podcast.svg" alt="애플 팟캐스트 로고">
-              <strong>Apple Podcast</strong>
-            </div>
-          </div>
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h2>What our listeners say</h2>
+          <p>Their experience throughout every platform</p>
         </div>
 
-      </div>
-      <div class="swiper-button">
-        <div class="swiper-button-next">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M24 5.50049C13.784 5.50049 5.5 13.7825 5.5 24.0005C5.5 34.2165 13.784 42.5005 24 42.5005C34.216 42.5005 42.5 34.2165 42.5 24.0005C42.5 13.7825 34.216 5.50049 24 5.50049Z"
-              stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M26.8847 17.0581L19.9127 24.0001L26.8847 30.9421" stroke="black" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-
-        </div>
-        <div class="swiper-button-prev">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M24 42.4996C34.216 42.4996 42.5 34.2176 42.5 23.9996C42.5 13.7836 34.216 5.49963 24 5.49963C13.784 5.49963 5.5 13.7836 5.5 23.9996C5.5 34.2176 13.784 42.4996 24 42.4996Z"
-              stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M21.1153 30.942L28.0873 24L21.1153 17.058" stroke="black" stroke-width="2.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section><!-- ########## testimonials AREA END ########## -->
-
-
-  <!-- ########## features AREA START ########## -->
-  <section id="features">
-    <div class="container">
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>Membership benefits</h2>
-        <p>Become our sponsor and get all benefits</p>
-      </div>
-
-      <!-- ----------  features group---------- -->
-      <ul class="features-group">
-        <li>
-          <img src="/images/features-icon-1.svg" alt="feature icon">
-          <h3>Topic by Request</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-        <li>
-          <img src="/images/features-icon-2.svg" alt="feature icon">
-          <h3>Exclusive Content</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-        <li>
-          <img src="/images/features-icon-3.svg" alt="feature icon">
-          <h3>Join the Community</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-        <li>
-          <img src="/images/features-icon-4.svg" alt="feature icon">
-          <h3>Livestreaming Access</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-        <li>
-          <img src="/images/features-icon-5.svg" alt="feature icon">
-          <h3>Exclusive Episodes & Merch</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-        <li>
-          <img src="/images/features-icon-6.svg" alt="feature icon">
-          <h3>And much more!</h3>
-          <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
-        </li>
-      </ul>
-
-      <p><a href="#" class="btn">SEE PRICING</a></p>
-
-    </div>
-  </section><!-- ########## features AREA END ########## -->
-
-
-  <!-- ########## episode AREA START ########## -->
-  <section id="episode">
-    <div class="container">
-      
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>Recent Episodes</h2>
-        <p>Available on your favorite platform</p>
-      </div>
-
-      <!-- ----------  episode cards ---------- -->
-      <ul class="episode-cards">
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-6.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 6</span>Pandemic Becoming Endemic</h3>
+        <!-- ---------- review slider ---------- -->
+        <div class="swiper review-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                <span>“</span>
+                Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore
+                magna
+                aliqua.
               </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>covid-19</span>
-              <span>health</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
+              <div class="writer">
+                <img src="/images/profile-img-2.jpg" alt="Luna lovegood's profile image">
+                <div class="name-platform">
+                  <p>Luna lovegood,</p>
+                  <div>
+                    <img class="platform-icon" class="platform-icon" src="/images/icon-spotify-color.svg"
+                      alt="스포티파이 로고">
+                    <strong>Spotify</strong>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-5.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 5</span>Tesla Autopilot Controversy</h3>
+            <div class="swiper-slide review">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                <span>“</span>
+                Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore
+                magna
+                aliqua.
               </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>automation</span>
-              <span>tech</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
+              <div class="writer">
+                <img src="/images/profile-img-3.jpg" alt="Emily Blunt's profile image">
+                <div class="name-platform">
+                  <p>Emily Blunt,</p>
+                  <div>
+                    <img class="platform-icon" src="/images/icon-google-podcast-color.svg" alt="구글 팟캐스트 로고">
+                    <strong>Google Podcast</strong>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-4.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 4</span>Women's Rights? Is it alright?</h3>
+            <div class="swiper-slide review">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                <span>“</span>
+                Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor incidi ut labore et dolore
+                magna
+                aliqua.
               </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>women’s rights</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
+              <div class="writer">
+                <img src="/images/profile-img-4.jpg" alt="Mia Winters's profile image">
+                <div class="name-platform">
+                  <p>Mia Winters,</p>
+                  <div>
+                    <img class="platform-icon" src="/images/icon-apple-podcast.svg" alt="애플 팟캐스트 로고">
+                    <strong>Apple Podcast</strong>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-3.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 3</span>How to Deal with Self-Confidence</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>self-esteem</span>
-              <span>health</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-2.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 2</span>Type of Social Classes of People</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>social class</span>
-              <span>wealth</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="episode-card">
-          <div class="top-box">
-            <img src="/images/cover-1.jpg" alt="cover image">
-            <div class="text-group">
-              <h3><span>Eps. 1</span>Are you a Perplexed Mind Person?</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
-              </p>
-            </div>
-          </div>
-          <div class="bottom-box">
-            <div class="hashtag">
-              <span>mind-behaviour</span>
-              <span>health</span>
-            </div>
-            <div class="host">
-              <span>Hosted by:</span>
-              <div>
-                <img src="/images/profile-img-5.jpg" alt="profile image">
-              </div>
-              <div>
-                <img src="/images/profile-img-6.jpg" alt="profile image">
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
 
-      <p><a href="#" class="btn">BROWSE ALL EPISODES</a></p>
+        </div>
+        <div class="swiper-button">
+          <div class="swiper-button-next">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 5.50049C13.784 5.50049 5.5 13.7825 5.5 24.0005C5.5 34.2165 13.784 42.5005 24 42.5005C34.216 42.5005 42.5 34.2165 42.5 24.0005C42.5 13.7825 34.216 5.50049 24 5.50049Z"
+                stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M26.8847 17.0581L19.9127 24.0001L26.8847 30.9421" stroke="black" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
 
-    </div>
-  </section><!-- ########## episode AREA END ########## -->
-
-
-  <!-- ########## pricing AREA START ########## -->
-  <section id="pricing">
-    <div class="container">
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>Become our sponsor</h2>
-        <p>Get exclusive episodes, merch and more</p>
+          </div>
+          <div class="swiper-button-prev">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 42.4996C34.216 42.4996 42.5 34.2176 42.5 23.9996C42.5 13.7836 34.216 5.49963 24 5.49963C13.784 5.49963 5.5 13.7836 5.5 23.9996C5.5 34.2176 13.784 42.4996 24 42.4996Z"
+                stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21.1153 30.942L28.0873 24L21.1153 17.058" stroke="black" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
       </div>
-
-      <!-- ---------- pricing cards ---------- -->
-      <ul class="pricing-cards">
-        <li class="pricing-card">
-          <div class="card-top">
-            <div class="text-group">
-              <div class="pricing-name">
-                <h3>Member</h3>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="btn-price">
-              <div class="btn">SUBSCRIBE</div>
-              <div class="price">$9.99<span>/month</span></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <h4>What’s included:</h4>
-            <ul>
-              <li>• Exclusive Content</li>
-              <li>• 5% Discount on Merch</li>
-              <li>• Join the Community</li>
-              <li>• Livestreaming Access</li>
-            </ul>
-          </div>
-        </li>
-        <li class="pricing-card">
-          <div class="card-top">
-            <div class="text-group">
-              <div class="pricing-name">
-                <h3>Family</h3>
-                <div>MOST POPULAR</div>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="btn-price">
-              <div class="btn">SUBSCRIBE</div>
-              <div class="price">$14.99<span>/month</span></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <h4>What’s included:</h4>
-            <ul>
-              <li><strong>• Everything in Tier 1</strong></li>
-              <li>• Free tickets to Events</li>
-              <li>• Limited Edition Merch</li>
-              <li>• Promote your Product</li>
-              <li>• Request Topic</li>
-            </ul>
-          </div>
-        </li>
-        <li class="pricing-card">
-          <div class="card-top">
-            <div class="text-group">
-              <div class="pricing-name">
-                <h3>Official</h3>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="btn-price">
-              <div class="btn">SUBSCRIBE</div>
-              <div class="price">$29.99<span>/month</span></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <h4>What’s included:</h4>
-            <ul>
-              <li><strong>• Everything in Tier 2</strong></li>
-              <li>• Exclusive Badge on Livestreaming</li>
-              <li>• Become an Official Sponsor</li>
-              <li>• Early Access to All Episodes</li>
-              <li>• Free Stikers and Merch</li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section><!-- ########## pricing AREA END ########## -->
+    </section><!-- ########## testimonials AREA END ########## -->
 
 
-  <!-- ########## blog AREA START ########## -->
-  <section id="blog">
-    <div class="container">
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <h2>Article and News</h2>
-        <p>News, tips, tricks and more</p>
+    <!-- ########## features AREA START ########## -->
+    <section id="features">
+      <div class="container">
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h2>Membership benefits</h2>
+          <p>Become our sponsor and get all benefits</p>
+        </div>
+
+        <!-- ----------  features group---------- -->
+        <ul class="features-group">
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-1.svg" alt="feature icon">
+            <h3>Topic by Request</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-2.svg" alt="feature icon">
+            <h3>Exclusive Content</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-3.svg" alt="feature icon">
+            <h3>Join the Community</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-4.svg" alt="feature icon">
+            <h3>Livestreaming Access</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-5.svg" alt="feature icon">
+            <h3>Exclusive episodes & Merch</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+          <li class="wow animate__fadeInUp" data-wow-duration="1s">
+            <img src="/images/features-icon-6.svg" alt="feature icon">
+            <h3>And much more!</h3>
+            <p>Lorem ipsum dolor sit amet consectet piscing elit, sed do eiusmod tempor.</p>
+          </li>
+        </ul>
+
+        <p><a href="#" class="btn">SEE PRICING</a></p>
+
       </div>
+    </section><!-- ########## features AREA END ########## -->
 
-      <!-- ---------- blog cards ---------- -->
-      <ul class="blog-cards">
-        <li class="blog-card">
-          <img src="/images/blog-img-1.jpg" alt="podcast studio">
-          <div class="text-group">
-            <div class="category">PODCAST</div>
-            <h3>Setup your own podcast</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-            <div class="hashtag-date">
+
+    <!-- ########## episodes AREA START ########## -->
+    <section id="episodes" data-scroll>
+      <div class="container">
+
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h2>Recent episodes</h2>
+          <p>Available on your favorite platform</p>
+        </div>
+
+        <!-- ----------  episodes cards ---------- -->
+        <ul class="episodes-cards">
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-6.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 6</span>Pandemic Becoming Endemic</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
               <div class="hashtag">
-                <span>business</span>
-                <span>startup</span>
+                <span>covid-19</span>
+                <span>health</span>
               </div>
-              <div class="date">Sep 14, 2021</div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="blog-card">
-          <img src="/images/blog-img-2.jpg" alt="doodle">
-          <div class="text-group">
-            <div class="category">TIPS & TRICK</div>
-            <h3>Doodle artwork 101</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
-            </p>
-            <div class="hashtag-date">
+          </li>
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-5.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 5</span>Tesla Autopilot Controversy</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
               <div class="hashtag">
-                <span>art</span>
-                <span>creative</span>
-                <span>tips and trick</span>
+                <span>automation</span>
+                <span>tech</span>
               </div>
-              <div class="date">Sep 12, 2021</div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-4.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 4</span>Women's Rights? Is it alright?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="hashtag">
+                <span>women’s rights</span>
+              </div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-3.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 3</span>How to Deal with Self-Confidence</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="hashtag">
+                <span>self-esteem</span>
+                <span>health</span>
+              </div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-2.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 2</span>Type of Social Classes of People</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="hashtag">
+                <span>social class</span>
+                <span>wealth</span>
+              </div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="episodes-card">
+            <div class="top-box">
+              <img src="/images/cover-1.jpg" alt="cover image">
+              <div class="text-group">
+                <h3><span>Eps. 1</span>Are you a Perplexed Mind Person?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac ultrices odio.
+                </p>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="hashtag">
+                <span>mind-behaviour</span>
+                <span>health</span>
+              </div>
+              <div class="host">
+                <span>Hosted by:</span>
+                <div>
+                  <img src="/images/profile-img-5.jpg" alt="profile image">
+                </div>
+                <div>
+                  <img src="/images/profile-img-6.jpg" alt="profile image">
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
 
-      <p><a href="#" class="btn">BROWSE ALL</a></p>
+        <p><a href="#" class="btn">BROWSE ALL EPISODES</a></p>
 
-    </div>
-  </section><!-- ########## blog AREA END ########## -->
-
-
-  <!-- ########## cta AREA START ########## -->
-  <section id="cta">
-    <div class="container-fluid">
-      <!-- ---------- title group ---------- -->
-      <div class="title-group">
-        <div class="deco-text">BETA</div>
-        <h2>Available now Pod of Cast App</h2>
-        <p>Available now Pod of Cast App</p>
       </div>
+    </section><!-- ########## episodes AREA END ########## -->
 
-      <p><a href="#" class="btn">DOWNLOAD NOW</a></p>
 
-      <div class="platform-group">
-        <p>Content also available on:</p>
-        <div>
-          <a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a>
-          <a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a>
-          <a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a>
+    <!-- ########## pricing AREA START ########## -->
+    <section id="pricing">
+      <div class="container">
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h2>Become our sponsor</h2>
+          <p>Get exclusive episodes, merch and more</p>
         </div>
+
+        <!-- ---------- pricing cards ---------- -->
+        <ul class="pricing-cards">
+          <li class="pricing-card">
+            <div class="card-top">
+              <div class="text-group">
+                <div class="pricing-name">
+                  <h3>Member</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
+              </div>
+              <div class="btn-price">
+                <div class="btn">SUBSCRIBE</div>
+                <div class="price">$9.99<span>/month</span></div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <h4>What’s included:</h4>
+              <ul>
+                <li>Exclusive Content</li>
+                <li>5% Discount on Merch</li>
+                <li>Join the Community</li>
+                <li>Livestreaming Access</li>
+              </ul>
+            </div>
+          </li>
+          <li class="pricing-card  wow animate__headShake" data-wow-duration="1s" 
+          data-wow-iteration="3">
+            <div class="card-top">
+              <div class="text-group">
+                <div class="pricing-name">
+                  <h3>Family</h3>
+                  <div>MOST POPULAR</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
+              </div>
+              <div class="btn-price">
+                <div class="btn">SUBSCRIBE</div>
+                <div class="price">$14.99<span>/month</span></div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <h4>What’s included:</h4>
+              <ul>
+                <li><strong>Everything in Tier 1</strong></li>
+                <li>Free tickets to Events</li>
+                <li>Limited Edition Merch</li>
+                <li>Promote your Product</li>
+                <li>Request Topic</li>
+              </ul>
+            </div>
+          </li>
+          <li class="pricing-card">
+            <div class="card-top">
+              <div class="text-group">
+                <div class="pricing-name">
+                  <h3>Official</h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
+              </div>
+              <div class="btn-price">
+                <div class="btn">SUBSCRIBE</div>
+                <div class="price">$29.99<span>/month</span></div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <h4>What’s included:</h4>
+              <ul>
+                <li><strong>Everything in Tier 2</strong></li>
+                <li>Exclusive Badge on Livestreaming</li>
+                <li>Become an Official Sponsor</li>
+                <li>Early Access to All episodes</li>
+                <li>Free Stikers and Merch</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
+    </section><!-- ########## pricing AREA END ########## -->
 
-      <div class="left-img">
-        <img class="phone" src="/images/cta-img-1.png" alt="phone">
-        <img class="deco-big" src="/images/deco-img-5.svg" alt="">
-        <img class="deco-small" src="/images/deco-img-5.svg" alt="">
-        
+
+    <!-- ########## blog AREA START ########## -->
+    <section id="blog">
+      <div class="container">
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <h2>Article and News</h2>
+          <p>News, tips, tricks and more</p>
+        </div>
+
+        <!-- ---------- blog cards ---------- -->
+        <ul class="blog-cards">
+          <li class="blog-card">
+            <img src="/images/blog-img-1.jpg" alt="podcast studio">
+            <div class="text-group">
+              <div class="category">PODCAST</div>
+              <h3>Setup your own podcast</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+                <div class="hashtag-date">
+                  <div class="hashtag">
+                    <span>business</span>
+                    <span>startup</span>
+                  </div>
+                  <div class="date">Sep 14, 2021</div>
+                </div>
+            </div>
+          </li>
+          <li class="blog-card">
+            <img src="/images/blog-img-2.jpg" alt="doodle">
+            <div class="text-group">
+              <div class="category">TIPS & TRICK</div>
+              <h3>Doodle artwork 101</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation ullamco laboris...
+              </p>
+              <div class="hashtag-date">
+                <div class="hashtag">
+                  <span>art</span>
+                  <span>creative</span>
+                  <span>tips and trick</span>
+                </div>
+                <div class="date">Sep 12, 2021</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <p><a href="#" class="btn">BROWSE ALL</a></p>
+
       </div>
+    </section><!-- ########## blog AREA END ########## -->
 
-      <div class="right-img">
-        <img class="phone" src="/images/cta-img-2.png" alt="phone">
-        <img class="deco-bundle" src="/images/deco-img-8.svg" alt="" >
+
+    <!-- ########## cta AREA START ########## -->
+    <section id="cta" data-scroll>
+      <div class="container-fluid">
+        <!-- ---------- title group ---------- -->
+        <div class="title-group">
+          <div class="deco-text">BETA</div>
+          <h2>Available now Pod of Cast App</h2>
+          <p>Available now Pod of Cast App</p>
+        </div>
+
+        <p><a href="#" class="btn">DOWNLOAD NOW</a></p>
+
+        <div class="platform-group">
+          <p>Content also available on:</p>
+          <div>
+            <a href="#"><img src="/images/icon-google-podcast.svg" alt="구글 팟캐스트 아이콘"></a>
+            <a href="#"><img src="/images/icon-spotify.svg" alt="스포티파이 아이콘"></a>
+            <a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a>
+          </div>
+        </div>
+
+        <div class="left-img wow animate__fadeIn" data-wow-duration="1s">
+          <img class="phone" src="/images/cta-img-1.png" alt="phone">
+          <img class="deco-big" src="/images/deco-img-5.svg" alt="">
+          <img class="deco-small" src="/images/deco-img-5.svg" alt="">
+
+        </div>
+
+        <div class="right-img wow animate__fadeIn" data-wow-duration="1s">
+          <img class="phone" src="/images/cta-img-2.png" alt="phone">
+          <img class="deco-bundle" src="/images/deco-img-8.svg" alt="">
+        </div>
+
+
       </div>
-
-
-    </div>
-  </section><!-- ########## cta AREA END ########## -->
+    </section><!-- ########## cta AREA END ########## -->
+  </main>
 
 
   <!-- ########## header AREA START ########## -->
@@ -680,14 +714,14 @@
             <a href="#"><img src="/images/icon-tiktok.svg" alt="틱톡 바로가기"></a>
           </div>
         </div>
-        <div class="sitemap">
+        <div class="sitemap menu">
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#episodes">Episodes</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about" class="about-btn">About</a></li>
+            <li><a href="#testimonials" class="testimonials-btn">Testimonials</a></li>
+            <li><a href="#features" class="features-btn">Features</a></li>
+            <li><a href="#episodes" class=".episodes-btn">episodes</a></li>
+            <li><a href="#pricing" class="pricing-btn">Pricing</a></li>
+            <li><a href="#blog" class="blog-btn">Blog</a></li>
           </ul>
         </div>
         <div class="platform-app">
@@ -718,17 +752,19 @@
   </footer><!-- ########## header AREA END ########## -->
 
 
+  <!-- swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- scroll-out JS -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+  <!-- wow JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script src="/js/main.js"></script>
 
 
 
 </body>
-
-<!-- swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
-<script src="/js/main.js"></script>
-
 
 </html>
