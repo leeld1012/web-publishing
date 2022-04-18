@@ -9,6 +9,15 @@ toggleBtn.addEventListener('click', () => {
   toggleBtn.classList.toggle('active');
 });
 
+
+// Type it 
+document.addEventListener("DOMContentLoaded", function () {
+  new TypeIt("#element", {
+    cursor: false,
+    loop:true,
+  }).pause(2000).go();
+});
+
 // home cover-slider
 var swiper = new Swiper(".cover-slider", {
   loop: true,
@@ -20,18 +29,14 @@ var swiper = new Swiper(".cover-slider", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 2.5,
-      spaceBetween: 40,
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
     1025: {
-      slidesPerView: 3.5,
-      spaceBetween: 30,
-    },
-    1200: {
       slidesPerView: 4,
       spaceBetween: 20,
     },
@@ -53,10 +58,14 @@ var swiper = new Swiper(".review-slider", {
       spaceBetween: 20,
     },
     481: {
-      slidesPerView: 2,
+      slidesPerView: 1.4,
       spaceBetween: 20,
     },
-    1281: {
+    769: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    1025: {
       slidesPerView: 3,
       spaceBetween: 30,
     },

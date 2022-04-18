@@ -9,6 +9,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+  <!-- Animate CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <!-- my CSS -->
@@ -28,10 +29,10 @@
       </a>
 
       <ul class="menu">
-        <li><a href="#about" class="about-btn">About</a></li>
-        <li><a href="#features" class="features-btn">Features</a></li>
-        <li><a href="#pricing" class="pricing-btn">Pricing</a></li>
-        <li><a href="#blog" class="blog-btn">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
 
       <div class="btn-group">
@@ -57,7 +58,7 @@
 
         <!-- ---------- title group ---------- -->
         <div class="title-group">
-          <h1>Your Daily<span>Podcast</span></h1>
+          <h1 id="element">Your Daily<span>Podcast</span></h1>
           <p>We cover all kinds of categories and a weekly special guest.</p>
           <a href="#" class="btn">SUBSCRIBE</a>
         </div>
@@ -163,7 +164,7 @@
       <div class="container">
 
         <div class="title-group">
-          <h2>Talk. Listen. Get inspired by every minute of it.</h2>
+          <h2>Talk. Listen. Get inspired<br>by every minute of it.</h2>
         </div>
 
         <div class="contents">
@@ -352,7 +353,7 @@
 
         <!-- ----------  episodes cards ---------- -->
         <ul class="episodes-cards">
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-6.jpg" alt="cover image">
               <div class="text-group">
@@ -378,7 +379,7 @@
               </div>
             </div>
           </li>
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-5.jpg" alt="cover image">
               <div class="text-group">
@@ -404,7 +405,7 @@
               </div>
             </div>
           </li>
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-4.jpg" alt="cover image">
               <div class="text-group">
@@ -429,7 +430,7 @@
               </div>
             </div>
           </li>
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-3.jpg" alt="cover image">
               <div class="text-group">
@@ -455,7 +456,7 @@
               </div>
             </div>
           </li>
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-2.jpg" alt="cover image">
               <div class="text-group">
@@ -481,7 +482,7 @@
               </div>
             </div>
           </li>
-          <li class="episodes-card">
+          <li class="episodes-card wow animate__fadeIn" data-wow-duration="0.8s">
             <div class="top-box">
               <img src="/images/cover-1.jpg" alt="cover image">
               <div class="text-group">
@@ -549,8 +550,7 @@
               </ul>
             </div>
           </li>
-          <li class="pricing-card  wow animate__headShake" data-wow-duration="1s" 
-          data-wow-iteration="3">
+          <li class="pricing-card  wow animate__headShake" data-wow-duration="1s" data-wow-iteration="3">
             <div class="card-top">
               <div class="text-group">
                 <div class="pricing-name">
@@ -615,7 +615,7 @@
 
         <!-- ---------- blog cards ---------- -->
         <ul class="blog-cards">
-          <li class="blog-card">
+          <li class="blog-card wow animate__fadeInLeft" data-wow-duration="1s">
             <img src="/images/blog-img-1.jpg" alt="podcast studio">
             <div class="text-group">
               <div class="category">PODCAST</div>
@@ -632,7 +632,7 @@
                 </div>
             </div>
           </li>
-          <li class="blog-card">
+          <li class="blog-card wow animate__fadeInRight" data-wow-duration="1s">
             <img src="/images/blog-img-2.jpg" alt="doodle">
             <div class="text-group">
               <div class="category">TIPS & TRICK</div>
@@ -679,21 +679,20 @@
             <a href="#"><img src="/images/icon-youtube.svg" alt="유튜브 아이콘"></a>
           </div>
         </div>
-
-        <div class="left-img wow animate__fadeIn" data-wow-duration="1s">
+        <div class="left-img wow animate__fadeInLeft" data-wow-duration="1s">
           <img class="phone" src="/images/cta-img-1.png" alt="phone">
           <img class="deco-big" src="/images/deco-img-5.svg" alt="">
           <img class="deco-small" src="/images/deco-img-5.svg" alt="">
 
         </div>
 
-        <div class="right-img wow animate__fadeIn" data-wow-duration="1s">
+        <div class="right-img wow animate__fadeInRight" data-wow-duration="1s">
           <img class="phone" src="/images/cta-img-2.png" alt="phone">
           <img class="deco-bundle" src="/images/deco-img-8.svg" alt="">
         </div>
-
-
       </div>
+
+
     </section><!-- ########## cta AREA END ########## -->
   </main>
 
@@ -714,14 +713,14 @@
             <a href="#"><img src="/images/icon-tiktok.svg" alt="틱톡 바로가기"></a>
           </div>
         </div>
-        <div class="sitemap menu">
+        <div class="sitemap">
           <ul>
-            <li><a href="#about" class="about-btn">About</a></li>
-            <li><a href="#testimonials" class="testimonials-btn">Testimonials</a></li>
-            <li><a href="#features" class="features-btn">Features</a></li>
-            <li><a href="#episodes" class=".episodes-btn">episodes</a></li>
-            <li><a href="#pricing" class="pricing-btn">Pricing</a></li>
-            <li><a href="#blog" class="blog-btn">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#episodes">episodes</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#blog">Blog</a></li>
           </ul>
         </div>
         <div class="platform-app">
@@ -752,11 +751,11 @@
   </footer><!-- ########## header AREA END ########## -->
 
 
+  <!-- Type it JS -->
+  <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
+
   <!-- swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- scroll-out JS -->
-  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
   <!-- wow JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

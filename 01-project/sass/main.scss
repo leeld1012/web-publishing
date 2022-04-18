@@ -153,15 +153,14 @@ header {
 
   .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 45%;
 
     li {
-      width: 100%;
       padding: 8px 3%;
       text-align: center;
-      
+
       a {
         display: block;
 
@@ -173,21 +172,23 @@ header {
           color: $pc1;
         }
       }
+
+      .on {
+        color: $pc1;
+      }
     }
-    
+
+
   }
 
-  .on {
-    a {
-      color: $pc1;
-    }
-  }
+
   .btn-group {
     display: flex;
     gap: 20px;
 
     a {
       padding: 12px 24px;
+      text-align: center;
 
       &:first-child {
         box-shadow: none;
@@ -216,7 +217,7 @@ header {
     width: 33px;
     height: 25px;
     right: 10%;
-    top: 47px;
+    top: 36px;
 
     span {
       @include transition(0.4s);
@@ -265,7 +266,7 @@ header {
     }
   }
 
-  
+
 
 
 }
@@ -276,24 +277,57 @@ header {
 
 // home AREA START #################
 #home {
-  background-color: $bgc2;
+  background: linear-gradient($bgc2, darken($bgc2, 5));
 
   .container-fluid {
     z-index: 1;
+
     &::before {
       z-index: 0;
-      @include decoImg(40%, 40%, -12%, 2%);
+      @include decoImg(31%, 38%, -7%, 2%);
       background-image: url(/images/deco-img-1.png);
+      @include animation(leftRight, 3s);
     }
-    
+
     &::after {
       z-index: -1;
-      @include decoImg(15%, 15%, 80%, 23%);
+      @include decoImgRight(8%, 16%, 6%, 6%);
       background-image: url(/images/deco-img-2.png);
+      @include animation(upDown, 3s);
+    }
+
+    @keyframes leftRight {
+      0% {
+        left: -7%
+      }
+
+      60% {
+        left: -6%
+      }
+
+      100% {
+        left: -7%;
+      }
+
+    }
+
+    @keyframes upDown {
+      0% {
+        top: 6%
+      }
+
+      40% {
+        top: 7%
+      }
+
+      100% {
+        top: 6%;
+      }
     }
 
     .title-group {
       h1 {
+        height: 192px;
         font-size: 6rem;
         line-height: 100%;
         letter-spacing: -0.05em;
@@ -375,7 +409,10 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 1.4rem;
+
+      h4 {
+        font-size: 1.4rem;
+      }
 
 
     }
@@ -387,11 +424,11 @@ header {
   .container {
     .contents {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       margin-bottom: 120px;
 
       .content {
-        width: 472px;
+        width: 35%;
         height: auto;
         text-align: center;
 
@@ -481,7 +518,7 @@ header {
   .container-fluid {
     .title-group {
       &::before {
-        @include decoImg(80px, 80px, 16%, -39%);
+        @include decoImg(7%, 70%, 20%, -39%);
         background-image: url(/images/deco-img-5.svg);
       }
     }
@@ -755,7 +792,7 @@ header {
     position: relative;
 
     &::before {
-      @include decoImg(120px, 120px, 19%, -6%);
+      @include decoImg(120px, 120px, 23%, -6%);
       background-image: url(/images/deco-img-7.svg);
       -webkit-transform: scaleX(-1);
       -moz-transform: scaleX(-1);
@@ -1068,46 +1105,58 @@ header {
       }
     }
 
-    .left-img {
-      width: auto;
-      height: auto;
+
+  }
+
+  .left-img {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    .phone {
+      width: 66%;
       position: absolute;
-      top: 0;
-      left: 0;
-
-      .phone {
-        position: absolute;
-        @include translate(-4%, 28%);
-      }
-
-      .deco-big {
-        position: absolute;
-        height: 140px;
-        @include translate(40%, 145%);
-      }
-
-      .deco-small {
-        position: absolute;
-        height: 65px;
-        @include translate(276%, 296%);
-      }
+      left: 2%;
+      bottom: -96%;
     }
 
-    .right-img {
+    .deco-big {
+      width: 21%;
       position: absolute;
-      top: 0;
-      right: 0;
+      left: 11%;
+      bottom: 55%;
+    }
 
-      .phone {
-        position: absolute;
-        @include translate(-52%, -4%);
-        z-index: 1;
-      }
+    .deco-small {
+      width: 12%;
+      position: absolute;
+      left: 30%;
+      bottom: 75%;
+    }
+  }
 
-      .deco-bundle {
-        position: absolute;
-        @include translate(-194%, 245%);
-      }
+  .right-img {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+
+    .phone {
+      width: 100%;
+      position: absolute;
+      right: -28%;
+      bottom: -65%;
+      z-index: 1;
+    }
+
+    .deco-bundle {
+      width: 29%;
+      position: absolute;
+      right: 45%;
+      bottom: -37%;
     }
   }
 }
@@ -1205,6 +1254,9 @@ footer {
               img {
                 height: 22px;
               }
+              &:last-child img {
+                height: 19px;
+              }
             }
           }
         }
@@ -1256,89 +1308,175 @@ footer {
 }
 
 // Media query AREA START ############
-// 1600px
-@media screen and (max-width: 100rem) {
+// 769px ~ 1024px
+@media all and (max-width:1024px) {
   .container {
-    width: 80%;
+    width: 85%;
   }
 
-  // testimonials AREA START #############
-  #testimonials .container-fluid {
-    .title-group::before {
-      left: 8%;
-    }
-
-    .review-slider {
-      @include translate(-24%, 0);
-    }
-
-    .swiper-button {
-      width: 80%;
-    }
-  }
-
-  // pricing AREA START #################
-  #pricing .container::before {
-    left: 21.5%;
-  }
-
-  // cta AREA START ####################
-  #cta .container-fluid .title-group {
-    width: 34%;
-  }
-}
-
-// 1280px
-@media screen and (max-width: 80rem) {
   .title-group {
-    width: 80%;
-  }
+    width: 83%;
 
+    h2 {
+      font-size: 3rem;
+    }
+  }
 
   // header AREA START ################
-  header .container .btn-group a {
-    &:last-child {
-      display: flex;
-      align-items: center
+  header .container {
+    .btn-group {
+      a {
+        font-size: 0.875rem;
+        padding: 12px 12px;
+
+        &:first-child {
+          width: 117px;
+        }
+
+        &:last-child {
+          display: flex;
+          align-items: center
+        }
+      }
     }
   }
 
-  // testimonials AREA START #############
+  // home AREA START #################
+  #home .container-fluid {
+    &::before {
+      top: 26%;
+    }
+
+    .title-group h1 {
+      height: 155px;
+      font-size: 5rem;
+    }
+
+    .cover-slider .swiper-slide .slide .caption h3 {
+      font-size: 1.8rem;
+    }
+
+    .support-group {
+      width: 70%;
+      height: auto;
+      padding: 32px 5% 32px 0;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        height: 1.7rem;
+
+        &:last-child {
+          height: 1.4rem;
+        }
+      }
+    }
+  }
+
+
+  // about AREA START #################
+  #about .container {
+    .contents .content {
+      width: 40%;
+
+      img {
+        height: 13rem;
+      }
+    }
+
+    .review {
+      &::before {
+        height: 26%;
+        top: 69%;
+      }
+
+      &::after {
+        height: 30%;
+        left: 92%;
+        top: -13%;
+      }
+
+      >p {
+        width: 69%;
+        font-size: 1.9rem;
+
+        span {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  // Testimonials AREA START ################
   #testimonials .container-fluid {
+    .title-group {
+      &::before {
+        left: 10%;
+      }
+    }
+
     .review-slider {
-      @include translate(-15%, 0);
+      @include translate(0, 0);
 
-      .swiper-wrapper .review .writer {
-        p {
-          margin-bottom: 4px;
-        }
-
-        .name-platform {
-          flex-direction: column;
-          align-items: start;
-        }
+      .swiper-wrapper .review>p {
+        font-size: 1.2rem;
       }
     }
 
     .swiper-button {
-      width: 78%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 
   // features AREA START ################
-  #features .container .features-group li {
-    width: 32%;
+  #features .container {
+    .title-group {
+      &::before {
+        left: 69%;
+      }
+    }
+
+    .features-group li {
+      height: auto;
+
+      img {
+        height: 65px;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   // episodes AREA START ################
-  #episodes .container .episodes-cards::before {
-    left: 92%;
-    top: -11%;
+  #episodes .container .episodes-cards {
+    &::before {
+      left: 90%;
+      top: -10%;
+    }
+
+    .episodes-card {
+      .top-box {
+        img {
+          width: 105px;
+          align-self: flex-start;
+        }
+      }
+
+      .bottom-box {
+        align-items: flex-start;
+
+        .hashtag {
+          span {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
   }
 
-  #episodes .container .episodes-cards .episodes-card .top-box img {
-    align-self: flex-start;
-  }
 
   // pricing AREA START #################
   #pricing .container {
@@ -1346,162 +1484,32 @@ footer {
       left: 14.5%;
     }
 
-    .pricing-cards .pricing-card {
-      .card-top {
-        .text-group .pricing-name {
-          gap: 20px;
-        }
-
-        .btn-price {
-          flex-direction: column-reverse;
-          align-items: start;
-
-          .price {
-            margin-bottom: 10px;
-
-            span {
-              display: inline-block;
-            }
-          }
-        }
-      }
-
-      .card-bottom {
-        height: 21.5rem;
-      }
-    }
-  }
-
-  // blog AREA START ###################
-  #blog .container .blog-cards .blog-card .text-group h3 {
-    font-size: 2rem;
-  }
-
-
-  // cta AREA START ####################
-  #cta .container-fluid {
-    .title-group {
-      width: 40%;
-    }
-
-    .left-img,
-    .right-img {
-      @include scale(0.8);
-    }
-
-    .left-img {
-      .phone {
-        @include translate(-8%, 47%);
-      }
-
-      .deco-big {
-        @include translate(25%, 272%);
-      }
-
-      .deco-small {
-        @include translate(243%, 539%);
-      }
-    }
-
-    .right-img {
-      .phone {
-        @include translate(-46%, 15%);
-      }
-
-      .deco-bundle {
-        @include translate(-159%, 335%);
-      }
-    }
-  }
-}
-
-// 1024px
-@media screen and (max-width: 64rem) {
-  .title-group h2 {
-    font-size: 3rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  // header AREA START ################
-  header .container .btn-group a {
-    padding: 12px 14px;
-  }
-
-  // home AREA START #################
-  #home .container-fluid {
-    &::before {
-      top: 16%;
-    }
-
-    .title-group h1 {
-      font-size: 5rem;
-    }
-
-    .support-group {
-      font-size: 1rem;
-
-      img {
-        height: 23%;
-      }
-    }
-  }
-
-
-  // about AREA START #################
-  #about .container .review>p {
-    font-size: 1.6rem;
-  }
-
-  // features AREA START ################
-  #features .container .title-group::before {
-    left: 71%;
-  }
-
-  // episodes AREA START ################
-  #episodes .container .episodes-cards {
-    &::before {
-      left: 90%;
-      top: -8%;
-    }
-
-    .episodes-card {
-      .top-box {
-        flex-direction: column;
-
-        img {
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 10px;
-        }
-      }
-
-      .bottom-box .hashtag span {
-        font-size: 0.875rem;
-      }
-    }
-  }
-
-  // pricing AREA START #################
-  #pricing .container {
-    &::before {
-      left: 12.5%;
-    }
-
     .pricing-cards {
       &::after {
-        top: -7%;
+        left: 93%;
+        top: -9%;
       }
 
       .pricing-card {
-        .card-top .text-group .pricing-name h3 {
-          font-size: 2rem;
+        .card-top {
+          height: 19rem;
+
+          .text-group .pricing-name div {
+            width: 66px;
+          }
+
+          .btn-price {
+            justify-content: start;
+            gap: 15px;
+
+            .btn {
+              padding: 1.25rem 1rem;
+            }
+
+            .price {
+              font-size: 1.3rem;
+            }
+          }
         }
 
         .card-bottom {
@@ -1514,41 +1522,73 @@ footer {
   // blog AREA START ###################
   #blog .container .blog-cards .blog-card {
     .text-group h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
 
-    .hashtag-date .hashtag span {
-      font-size: 0.875rem;
+    .hashtag-date {
+      flex-direction: row;
+      align-items: center;
+
+      .hashtag {
+        font-size: 0.875rem;
+      }
     }
   }
-
 
   // cta AREA START ####################
-  #cta .container-fluid .left-img,
-  #cta .container-fluid .right-img {
-    @include scale(0.65);
-  }
-
-  #cta .container-fluid .right-img {
-    .phone {
-      @include translate(-46%, 22%);
+  #cta .container-fluid {
+    .title-group {
+      width: 42%;
+      margin-bottom: 100px;
     }
 
-    .deco-bundle {
-      @include translate(-159%, 401%);
+    .left-img {
+      .phone {
+        width: 90%;
+        left: -5%;
+        bottom: -74%;
+      }
+
+      .deco-big {
+        bottom: 42%;
+      }
+
+      .deco-small {
+        bottom: 54%;
+      }
+    }
+
+    .right-img {
+      .phone {
+        width: 113%;
+        right: -37%;
+        bottom: -46%;
+      }
+
+      .deco-bundle {
+        width: 37%;
+        right: 44%;
+        bottom: -38%;
+      }
     }
   }
 
-
-  // footer AREA START #################
+  // footer AREA START ###################
   footer .container .company-sitemap-platform-app .platform-app {
     .platform {
       margin-bottom: 47px;
 
-      div a img {
-        height: 17px;
-      }
+      div {
+        a {
+          img {
+            height: 19px;
+          }
 
+          &:last-child img {
+            height: 16px;
+          }
+        }
+      }
     }
 
     .app div a img {
@@ -1557,130 +1597,36 @@ footer {
   }
 }
 
-// 960px
-@media screen and (max-width: 60rem) {
+// 481px ~ 768px
+@media all and (max-width:768px) {
+  .container {
+    width: 80%;
+  }
+
   .title-group {
-    width: 83%;
-  }
+    width: 78%;
 
-  // header AREA START ################
-  header .container {
-    h1 {
-      margin-right: 3%;
+    h2 {
+      font-size: 2.5rem;
     }
 
-    .btn-group a:first-child {
-      width: 126px;
+    p {
+      font-size: 1.2rem;
     }
   }
 
-
-  // about AREA START #################
-  #about .container {
-    .review {
-      &::before {
-        left: -9%;
-      }
-
-      >p {
-        width: 69%;
-      }
-    }
-  }
-
-  // features AREA START ################
-  #testimonials .container-fluid .review-slider .swiper-wrapper .review>p {
-    font-size: 1.2rem;
-  }
-
-  // episodes AREA START ################
-  #episodes .container .episodes-cards .episodes-card .bottom-box {
-    align-items: flex-start;
-    flex-direction: column;
-
-    .hashtag {
-      margin-bottom: 10px;
-    }
-
-    .host {
-      right: 0;
-    }
-  }
-
-
-  // pricing AREA START #################
-  #pricing .container {
-    &::before {
-      left: 10.5%;
-    }
-
-    .pricing-cards .pricing-card {
-      .card-top .text-group .pricing-name {
-        gap: 9px;
-      }
-
-      .card-bottom {
-        height: 22.5rem;
-      }
-    }
-
-  }
-
-  // blog AREA START ###################
-  #blog .container .blog-cards .blog-card .hashtag-date {
-    flex-direction: column;
-    align-items: flex-start;
-    span {
-      margin-bottom: 10px;
-    }
-  }
-
-  // cta AREA START ####################
-  #cta .container-fluid {
-
-    .left-img,
-    .right-img {
-      @include scale(0.6);
-    }
-
-    .left-img {
-      .phone {
-        transform: translate(-8%, 62%);
-      }
-
-      .deco-big {
-        transform: translate(25%, 374%);
-      }
-
-      .deco-small {
-        transform: translate(243%, 768%);
-      }
-    }
-
-    .right-img {
-      .phone {
-        transform: translate(-51%, 41%);
-      }
-
-      .deco-bundle {
-        transform: translate(-185%, 447%);
-      }
-    }
-  }
-
-}
-
-// 768px
-@media screen and (max-width: 48rem) {
-  .title-group h2 {
-    font-size: 2.5rem;
-  }
   main {
-    margin-top: 110px;
+    margin-top: 96px;
+  }
+
+  section {
+    scroll-margin-top: 96px;
   }
 
   // header AREA START ################
   header {
+    padding: 16px 0;
+
     .container {
       flex-direction: column;
       align-items: start;
@@ -1752,33 +1698,85 @@ footer {
 
   // home AREA START #################
   #home .container-fluid {
-    &::before{
-      top: 19%;
+    &::before {
+      top: 23%;
     }
+
     .title-group h1 {
+      height: 130px;
       font-size: 4rem;
     }
-    .support-group img {
-      height: 17%;
+
+    .cover-slider .swiper-slide .slide .caption h3 {
+      font-size: 2rem;
+    }
+
+    .support-group {
+      width: 80%;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      img {
+        height: 17%;
+
+        &:last-child {
+          height: 15%;
+        }
+      }
     }
   }
 
   // about AREA START #################
-  #about .container .review {
-    &::after {
-      left: 88%;
+  #about .container {
+    .contents {
+      justify-content: space-between;
+
+      .content {
+        width: 49%;
+
+        img {
+          height: 12rem;
+        }
+      }
     }
 
-    >p {
-      width: 79%;
+    .review {
+      &::before {
+        height: 28%;
+        left: -7%;
+        top: 66%;
+      }
+
+      &::after {
+        height: 30%;
+        left: 93%;
+        top: -13%;
+      }
+
+      >p {
+        width: 79%;
+        font-size: 1.5rem;
+
+        span {
+          font-size: 4rem;
+        }
+      }
     }
   }
 
 
   // testimonials AREA START #############
-  #testimonials .container-fluid .title-group::before {
-    left: 4%;
-    top: -46%;
+  #testimonials .container-fluid {
+    .title-group::before {
+      left: 7%;
+      top: -27%;
+    }
+
+    .review-slider .swiper-wrapper .review>p {
+      font-size: 1.2rem;
+    }
   }
 
   // features AREA START ################
@@ -1793,25 +1791,53 @@ footer {
   }
 
   // episodes AREA START ################
-  #episodes .container .episodes-cards::before {
-    left: 87%;
-    top: -6%;
+  #episodes .container .episodes-cards {
+    &::before {
+      height: 159px;
+      left: 89%;
+      top: -5%;
+    }
+
+    .episodes-card {
+      .top-box {
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+      .bottom-box {
+        flex-direction: column;
+
+        .hashtag span {
+          margin-bottom: 10px;
+        }
+
+        .host {
+          right: 0;
+        }
+      }
+    }
   }
 
   // pricing AREA START #################
   #pricing .container {
     &::before {
       height: 89px;
-      left: 4%;
-      top: -3%;
+      left: 3.5%;
+      top: -3.5%;
     }
 
     .pricing-cards {
       flex-direction: column;
 
       &::before {
-        left: -10%;
-        top: 91%;
+        height: 9%;
+        left: -7%;
+        top: 92%;
       }
 
       &::after {
@@ -1822,15 +1848,23 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        margin-bottom: 20px;
 
         .card-top {
           width: 49%;
+          height: auto;
           padding: 7% 5% 5%;
+          margin-bottom: 0;
+
+          .text-group {
+            margin-bottom: 20px;
+          }
         }
 
         .card-bottom {
           width: 49%;
-          padding: 5%;
+          height: auto;
+          padding: 7% 4%;
         }
       }
     }
@@ -1838,29 +1872,34 @@ footer {
 
   // blog AREA START ###################
   #blog .container .blog-cards {
-    flex-direction: column;
+    &::before {
+      height: 21%;
+    }
 
     &::after {
       width: 29%;
-      height: 36%;
-      left: 71%;
-      top: 75%;
+      height: 29%;
+      left: 85%;
+      top: 89%;
     }
 
     .blog-card {
-      width: 100%;
-      margin-bottom: 20px;
-
       &:last-child {
         margin-bottom: 0;
       }
 
+      img {
+        margin-bottom: 20px;
+      }
+
       .hashtag-date {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+
         .hashtag {
           span {
-            margin-bottom: 0px;
+            font-size: 0.875rem;
+            margin-bottom: 10px;
           }
         }
       }
@@ -1874,32 +1913,23 @@ footer {
       margin-bottom: 100px;
     }
 
-    .right-img,
-    .left-img {
-      @include scale(0.45);
-    }
-
     .left-img {
       .phone {
-        @include translate(-8%, 71%);
+        bottom: -71%;
       }
 
       .deco-big {
-        @include translate(25%, 434%);
+        bottom: 22%;
       }
 
       .deco-small {
-        @include translate(243%, 889%);
+        bottom: 33%;
       }
     }
 
     .right-img {
       .phone {
-        @include translate(-54%, 59%);
-      }
-
-      .deco-bundle {
-        @include translate(-185%, 554%);
+        bottom: -47%;
       }
     }
   }
@@ -1908,12 +1938,12 @@ footer {
   footer .container .company-sitemap-platform-app {
     margin-bottom: 100px;
     flex-direction: column;
+    gap: 40px;
 
     .company {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 40px;
 
       .logo {
         margin-bottom: 0;
@@ -1925,7 +1955,23 @@ footer {
     }
 
     .sitemap {
-      margin-bottom: 20px;
+      ul {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        li {
+          width: 30%;
+          height: 40px;
+          margin-bottom: 0;
+
+          a {
+            line-height: 40px;
+          }
+        }
+      }
     }
 
     .platform-app {
@@ -1934,6 +1980,7 @@ footer {
 
         div {
           justify-content: flex-start;
+          align-items: center;
 
           a {
             margin-right: 20px;
@@ -1956,17 +2003,33 @@ footer {
   }
 }
 
-// 480px
-@media screen and (max-width: 30rem) {
+// ~480px
+@media all and (max-width:480px) {
   .title-group {
     width: 100%;
+    margin-bottom: 60px;
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     p {
       font-size: 1rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  section,
+  footer {
+    padding: 120px 0;
+  }
+
+  section {
+    &::after {
+      @include translateScale(-50%, 50%, 0.8)
     }
   }
 
@@ -1982,7 +2045,8 @@ footer {
 
     .title-group {
       h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        height: 95px;
       }
 
       p {
@@ -1991,7 +2055,7 @@ footer {
     }
 
     .cover-slider .swiper-slide .slide .caption h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     .support-group {
@@ -2003,6 +2067,7 @@ footer {
       h4 {
         width: 100%;
         margin-bottom: 16px;
+        font-size: 1rem;
       }
 
       img {
@@ -2010,7 +2075,7 @@ footer {
         margin-bottom: 10px;
 
         &:last-child {
-          height: 20px;
+          height: 19px;
         }
       }
     }
@@ -2021,7 +2086,7 @@ footer {
     .contents {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 40px;
 
       .content {
         width: 100%;
@@ -2040,20 +2105,21 @@ footer {
       }
 
       &::after {
-        height: 31%;
-        left: 83%;
+        height: 23%;
+        left: 89%;
+        top: -10%;
       }
 
       >p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
 
         span {
-          font-size: 4rem;
+          font-size: 3rem;
         }
       }
 
       .writer {
-        padding: 0 10%;
+        padding: 0 5%;
 
         .name-platform {
           flex-direction: column;
@@ -2061,6 +2127,12 @@ footer {
 
           p {
             margin-bottom: 4px;
+          }
+
+          div {
+            strong {
+              font-size: 0.875rem;
+            }
           }
         }
       }
@@ -2073,12 +2145,30 @@ footer {
       padding: 0 10%;
 
       &::before {
-        top: -57%;
+        top: -28%;
+        left: 10%;
       }
     }
 
-    .review-slider {
-      @include translate(-2%, 0);
+    .review-slider .swiper-wrapper .review {
+      >p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 4rem;
+          margin-bottom: 15px;
+        }
+      }
+
+      .writer .name-platform {
+        align-items: flex-start;
+        flex-direction: column;
+
+        p {
+          margin-bottom: 4px;
+        }
+      }
     }
   }
 
@@ -2086,7 +2176,7 @@ footer {
   #features .container {
     .title-group {
       &::before {
-        height: 140px;
+        height: 114px;
         top: -59%;
       }
     }
@@ -2106,8 +2196,10 @@ footer {
 
     .episodes-card {
       width: 100%;
-      left: 86%;
-      top: -1.7%;
+
+      .top-box .text-group h3 span {
+        font-size: 0.875rem;
+      }
     }
   }
 
@@ -2115,7 +2207,7 @@ footer {
   #pricing .container {
     &::before {
       height: 89px;
-      left: -14.5%;
+      left: -10.5%;
       top: -2.5%;
     }
 
@@ -2131,6 +2223,7 @@ footer {
 
       .pricing-card {
         flex-direction: column;
+        gap: 10px;
         margin-bottom: 30px;
 
         &::before {
@@ -2147,10 +2240,15 @@ footer {
 
         .card-top {
           width: 100%;
-          height: 15rem;
 
           .text-group {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
+
+            .pricing-name {
+              gap: 20px;
+              justify-content: flex-start;
+              margin-bottom: 10px;
+            }
           }
 
           .btn-price {
@@ -2179,25 +2277,37 @@ footer {
 
   // blog AREA START ###################
   #blog .container {
+    flex-direction: column;
+
     .blog-cards {
+      gap: 20px;
+
       &::before {
-        left: -18%;
-        top: -6%;
+        height: 9%;
+        left: -8%;
+        top: -3%;
       }
 
       &::after {
-        left: 63%;
-        top: 73%;
+        left: 70%;
+        top: 79%;
       }
 
       .blog-card {
+        width: 100%;
+
         img {
           margin-bottom: 20px;
+        }
+
+        .text-group h3 {
+          font-size: 1.4rem;
         }
 
         .hashtag-date {
           flex-direction: column;
           align-items: flex-start;
+
           .hashtag {
             span {
               margin-bottom: 10px;
@@ -2223,197 +2333,121 @@ footer {
       }
 
       .left-img {
+        width: 45%;
+
         .phone {
-          @include translate(-8%, 94%);
+          bottom: -92%;
         }
 
         .deco-big {
-          @include translate(25%, 523%);
+          bottom: -2%;
         }
 
         .deco-small {
-          @include translate(243%, 1100%);
+          bottom: 8%;
         }
       }
 
       .right-img {
+        width: 50%;
+
         .phone {
-          @include translate(-54%, 85%);
+          bottom: -78%;
         }
 
         .deco-bundle {
-          @include translate(-223%, 540%);
+          bottom: -64%;
         }
-      }
-    }
-  }
-
-  // footer AREA START #################
-  footer .container .company-sitemap-platform-app .company {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-}
-
-
-// 360px
-@media screen and (max-width: 22.5rem) {
-
-  // home AREA START #################
-  #home .container-fluid {
-    &::before {
-      left: -18%;
-      top: 26%;
-    }
-
-    .title-group h2 {
-      font-size: 3rem;
-    }
-
-    .support-group img {
-      height: 21px;
-
-      &::last-child {
-        height: 17px;
-      }
-    }
-  }
-
-  // about AREA START #################
-  #about .container .review {
-
-    >p {
-      font-size: 1.2rem;
-    }
-
-    .writer {
-      font-size: 0.875rem;
-      flex-direction: column;
-
-      >img {
-        margin-bottom: 10px;
-      }
-
-      .name-platform {
-        align-items: center;
-
-        p {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-
-  // testimonials AREA START #############
-  #testimonials .container-fluid .review-slider .swiper-wrapper .review .writer {
-    flex-direction: column;
-
-    >img {
-      margin-bottom: 10px;
-    }
-
-    .name-platform {
-      align-items: center;
-
-      p {
-        margin-right: 0;
-      }
-    }
-  }
-
-  // features AREA START ################
-  #features .container {
-    .title-group {
-      &::before {
-        top: -54%;
-        left: 55%;
-      }
-    }
-  }
-
-  // pricing AREA START #################
-  #pricing .container {
-    &::before {
-      left: -12.5%;
-    }
-
-    .pricing-cards .pricing-card .card-top .btn-price {
-      gap: 15px;
-    }
-
-  }
-
-  // blog AREA START ###################
-  #blog .container .blog-cards {
-    &::after {
-      left: 58%;
-    }
-
-    .blog-card {
-      img {
-        margin-bottom: 20px;
-      }
-
-      .hashtag-date {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  }
-
-  // cta AREA START ####################
-  #cta {
-    padding-bottom: 140px;
-    .container-fluid {
-      .title-group {
-        width: 76%;
-      }
-  
-      .left-img,
-      .right-img {
-        display: none;
       }
     }
   }
 
   // footer AREA START #################
   footer .container {
-    .company-sitemap-platform-app .platform-app {
-      .platform {
-        p {
-          margin-bottom: 20px;
-        }
-
-        div a img {
-          height: 20px;
-
-          &:last-child {
-            height: 17px;
-          }
-        }
+    .company-sitemap-platform-app {
+      .company {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
       }
 
-      .app {
-        p {
-          margin-bottom: 20px;
-        }
+      .sitemap ul li {
+        width: 50%;
+      }
 
-        div a img {
-          height: 20px;
+      .platform-app .platform {
+        margin-bottom: 40px;
+
+        div {
+          flex-direction: column;
+          gap: 20px;
+          align-items: start;
         }
       }
     }
 
     .copyright {
       flex-direction: column;
+      gap: 10px;
+    }
 
-      p {
-        &:first-child {
-          margin-bottom: 10px;
-        }
+  }
+
+}
+
+
+// 360px
+@media screen and (max-width: 360px) {
+  .title-group h2 {
+    font-size: 1.4rem;
+  }
+
+  #home .container-fluid {
+    &::before {
+      top: 29%;
+    }
+
+    .cover-slider {
+      margin-bottom: 90px;
+    }
+
+    .support-group img {
+      height: 17px;
+
+      &:last-child {
+        height: 15px;
       }
+    }
+  }
+
+  #about .container .review>p {
+    font-size: 1.1rem;
+  }
+
+  #pricing .container::before {
+    height: 67px;
+    left: -24%;
+    top: -2%;
+  }
+
+  #pricing .container .pricing-cards .pricing-card .card-top .text-group .pricing-name h3 {
+    font-size: 2rem;
+  }
+
+  #blog .container .blog-cards .blog-card .text-group h3 {
+    font-size: 1.1rem;
+  }
+
+  #cta .container-fluid .left-img .phone {
+    bottom: -73%;
+  }
+
+  #cta .container-fluid .right-img {
+    .phone {
+      bottom: -61%;
+    }
+    .deco-bundle {
+      bottom: -57%;
     }
   }
 }

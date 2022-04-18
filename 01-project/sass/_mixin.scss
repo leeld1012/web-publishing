@@ -33,11 +33,7 @@
     transform: rotate($r);
 }
 
-
 @mixin animation($n, $du) {
-    position: absolute;
-    left: 0;
-    top: 0;
     animation-name: $n;
     animation-duration: $du;
     animation-iteration-count: infinite;
@@ -49,6 +45,17 @@
     width: $w;
     height: $h;
     left: $l;
+    top: $t;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin decoImgRight($w, $h, $l, $t) {
+    content: '';
+    position: absolute;
+    width: $w;
+    height: $h;
+    right: $l;
     top: $t;
     background-repeat: no-repeat;
     background-size: contain;
