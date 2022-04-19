@@ -265,15 +265,7 @@ header {
       }
     }
   }
-
-
-
-
 }
-
-
-
-
 
 // home AREA START #################
 #home {
@@ -518,7 +510,7 @@ header {
   .container-fluid {
     .title-group {
       &::before {
-        @include decoImg(7%, 70%, 20%, -39%);
+        @include decoImg(7%, 70%, 16%, -39%);
         background-image: url(/images/deco-img-5.svg);
       }
     }
@@ -792,7 +784,7 @@ header {
     position: relative;
 
     &::before {
-      @include decoImg(120px, 120px, 23%, -6%);
+      @include decoImg(120px, 120px, 19%, -6%);
       background-image: url(/images/deco-img-7.svg);
       -webkit-transform: scaleX(-1);
       -moz-transform: scaleX(-1);
@@ -1045,6 +1037,7 @@ header {
     position: relative;
     top: 0;
     left: 0;
+    
 
     .title-group {
       width: 27%;
@@ -1066,7 +1059,7 @@ header {
     p {
       text-align: center;
       margin-bottom: 24px;
-
+      z-index: 10;
       .btn {
         position: relative;
 
@@ -1080,7 +1073,7 @@ header {
     .platform-group {
       width: 187px;
       margin: 0 auto;
-
+      z-index: 10;
       p {
         font-size: 0.875rem;
         color: $fc2;
@@ -1104,61 +1097,63 @@ header {
         }
       }
     }
-
+    .left-img {
+      width: 35%;
+      height: 100%;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      z-index: 0;
+  
+      .phone {
+        width: 66%;
+        position: absolute;
+        left: 2%;
+        bottom: -96%;
+      }
+  
+      .deco-big {
+        width: 21%;
+        position: absolute;
+        left: 11%;
+        bottom: 55%;
+      }
+  
+      .deco-small {
+        width: 12%;
+        position: absolute;
+        left: 30%;
+        bottom: 75%;
+      }
+    }
+  
+    .right-img {
+      width: 35%;
+      height: 100%;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      z-index: 0;
+  
+      .phone {
+        width: 100%;
+        position: absolute;
+        right: -28%;
+        bottom: -65%;
+        z-index: 1;
+      }
+  
+      .deco-bundle {
+        width: 29%;
+        position: absolute;
+        right: 45%;
+        bottom: -37%;
+      }
+    }
 
   }
 
-  .left-img {
-    width: 35%;
-    height: 100%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-
-    .phone {
-      width: 66%;
-      position: absolute;
-      left: 2%;
-      bottom: -96%;
-    }
-
-    .deco-big {
-      width: 21%;
-      position: absolute;
-      left: 11%;
-      bottom: 55%;
-    }
-
-    .deco-small {
-      width: 12%;
-      position: absolute;
-      left: 30%;
-      bottom: 75%;
-    }
-  }
-
-  .right-img {
-    width: 35%;
-    height: 100%;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-
-    .phone {
-      width: 100%;
-      position: absolute;
-      right: -28%;
-      bottom: -65%;
-      z-index: 1;
-    }
-
-    .deco-bundle {
-      width: 29%;
-      position: absolute;
-      right: 45%;
-      bottom: -37%;
-    }
-  }
+  
 }
 
 // footer AREA START #################
@@ -1254,6 +1249,7 @@ footer {
               img {
                 height: 22px;
               }
+
               &:last-child img {
                 height: 19px;
               }
@@ -1715,15 +1711,7 @@ footer {
       width: 80%;
 
       h4 {
-        font-size: 1.2rem;
-      }
-
-      img {
-        height: 17%;
-
-        &:last-child {
-          height: 15%;
-        }
+        font-size: 1.1rem;
       }
     }
   }
@@ -2332,6 +2320,15 @@ footer {
         margin-bottom: 52px;
       }
 
+      p .btn {
+        &::before {
+          width: 98px;
+          height: 100px;
+          left: 85%;
+          top: -78%;
+        }
+      }
+
       .left-img {
         width: 45%;
 
@@ -2424,30 +2421,64 @@ footer {
     font-size: 1.1rem;
   }
 
-  #pricing .container::before {
-    height: 67px;
-    left: -24%;
-    top: -2%;
+  #features .container .title-group::before {
+    height: 102px;
+    top: -51%;
   }
 
-  #pricing .container .pricing-cards .pricing-card .card-top .text-group .pricing-name h3 {
-    font-size: 2rem;
+  #episodes .container .episodes-cards::before {
+    height: 91px;
+    left: 85%;
+    top: -1.4%;
   }
 
-  #blog .container .blog-cards .blog-card .text-group h3 {
-    font-size: 1.1rem;
-  }
-
-  #cta .container-fluid .left-img .phone {
-    bottom: -73%;
-  }
-
-  #cta .container-fluid .right-img {
-    .phone {
-      bottom: -61%;
+  #pricing .container {
+    &::before {
+      height: 67px;
+      left: -24%;
+      top: -2%;
     }
-    .deco-bundle {
-      bottom: -57%;
+
+    .pricing-cards .pricing-card .card-top .text-group .pricing-name h3 {
+      font-size: 2rem;
     }
   }
+
+  #blog .container .blog-cards {
+    &::after {
+      left: 64%;
+      top: 78%;
+    }
+
+    .blog-card .text-group h3 {
+      font-size: 1.1rem;
+    }
+  }
+
+  #cta .container-fluid {
+    .left-img {
+      .phone {
+        bottom: -73%;
+      }
+
+      .deco-big {
+        bottom: -7%;
+      }
+
+      .deco-small {
+        bottom: 2%;
+      }
+    }
+
+    .right-img {
+      .phone {
+        bottom: -61%;
+      }
+
+      .deco-bundle {
+        bottom: -57%;
+      }
+    }
+  }
+
 }

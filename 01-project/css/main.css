@@ -560,7 +560,7 @@ header .mobile-btn:hover span:nth-child(3) {
   position: absolute;
   width: 7%;
   height: 70%;
-  left: 20%;
+  left: 16%;
   top: -39%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -839,7 +839,7 @@ header .mobile-btn:hover span:nth-child(3) {
   position: absolute;
   width: 120px;
   height: 120px;
-  left: 23%;
+  left: 19%;
   top: -6%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1128,6 +1128,7 @@ header .mobile-btn:hover span:nth-child(3) {
 #cta .container-fluid p {
   text-align: center;
   margin-bottom: 24px;
+  z-index: 10;
 }
 
 #cta .container-fluid p .btn {
@@ -1149,6 +1150,7 @@ header .mobile-btn:hover span:nth-child(3) {
 #cta .container-fluid .platform-group {
   width: 187px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 #cta .container-fluid .platform-group p {
@@ -1172,44 +1174,46 @@ header .mobile-btn:hover span:nth-child(3) {
   filter: brightness(0);
 }
 
-#cta .left-img {
+#cta .container-fluid .left-img {
   width: 35%;
   height: 100%;
   position: absolute;
   bottom: 0%;
   left: 0%;
+  z-index: 0;
 }
 
-#cta .left-img .phone {
+#cta .container-fluid .left-img .phone {
   width: 66%;
   position: absolute;
   left: 2%;
   bottom: -96%;
 }
 
-#cta .left-img .deco-big {
+#cta .container-fluid .left-img .deco-big {
   width: 21%;
   position: absolute;
   left: 11%;
   bottom: 55%;
 }
 
-#cta .left-img .deco-small {
+#cta .container-fluid .left-img .deco-small {
   width: 12%;
   position: absolute;
   left: 30%;
   bottom: 75%;
 }
 
-#cta .right-img {
+#cta .container-fluid .right-img {
   width: 35%;
   height: 100%;
   position: absolute;
   bottom: 0%;
   right: 0%;
+  z-index: 0;
 }
 
-#cta .right-img .phone {
+#cta .container-fluid .right-img .phone {
   width: 100%;
   position: absolute;
   right: -28%;
@@ -1217,7 +1221,7 @@ header .mobile-btn:hover span:nth-child(3) {
   z-index: 1;
 }
 
-#cta .right-img .deco-bundle {
+#cta .container-fluid .right-img .deco-bundle {
   width: 29%;
   position: absolute;
   right: 45%;
@@ -1622,13 +1626,7 @@ footer .container .copyright p a:hover {
     width: 80%;
   }
   #home .container-fluid .support-group h4 {
-    font-size: 1.2rem;
-  }
-  #home .container-fluid .support-group img {
-    height: 17%;
-  }
-  #home .container-fluid .support-group img:last-child {
-    height: 15%;
+    font-size: 1.1rem;
   }
   #about .container .contents {
     justify-content: space-between;
@@ -2043,6 +2041,12 @@ footer .container .copyright p a:hover {
     width: 60%;
     margin-bottom: 52px;
   }
+  #cta .container-fluid p .btn::before {
+    width: 98px;
+    height: 100px;
+    left: 85%;
+    top: -78%;
+  }
   #cta .container-fluid .left-img {
     width: 45%;
   }
@@ -2105,6 +2109,15 @@ footer .container .copyright p a:hover {
   #about .container .review > p {
     font-size: 1.1rem;
   }
+  #features .container .title-group::before {
+    height: 102px;
+    top: -51%;
+  }
+  #episodes .container .episodes-cards::before {
+    height: 91px;
+    left: 85%;
+    top: -1.4%;
+  }
   #pricing .container::before {
     height: 67px;
     left: -24%;
@@ -2113,11 +2126,21 @@ footer .container .copyright p a:hover {
   #pricing .container .pricing-cards .pricing-card .card-top .text-group .pricing-name h3 {
     font-size: 2rem;
   }
+  #blog .container .blog-cards::after {
+    left: 64%;
+    top: 78%;
+  }
   #blog .container .blog-cards .blog-card .text-group h3 {
     font-size: 1.1rem;
   }
   #cta .container-fluid .left-img .phone {
     bottom: -73%;
+  }
+  #cta .container-fluid .left-img .deco-big {
+    bottom: -7%;
+  }
+  #cta .container-fluid .left-img .deco-small {
+    bottom: 2%;
   }
   #cta .container-fluid .right-img .phone {
     bottom: -61%;
