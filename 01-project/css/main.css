@@ -111,11 +111,11 @@ section::after {
   bottom: 0;
   z-index: 10;
   transform: translate(-50%, 50%);
-  background-image: url(/images/deco-img-10.svg);
+  background-image: url(../images/deco-img-10.svg);
 }
 
 section#home::after, section#blog::after {
-  background-image: url(/images/deco-img-9.svg);
+  background-image: url(../images/deco-img-9.svg);
 }
 
 section#cta::after {
@@ -319,7 +319,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: 2%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-1.png);
+  background-image: url(../images/deco-img-1.png);
   animation-name: leftRight;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -335,7 +335,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: 6%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-2.png);
+  background-image: url(../images/deco-img-2.png);
   animation-name: upDown;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -487,7 +487,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: 60%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-3.svg);
+  background-image: url(../images/deco-img-3.svg);
 }
 
 #about .container .review::after {
@@ -499,7 +499,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: -17%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-4.svg);
+  background-image: url(../images/deco-img-4.svg);
 }
 
 #about .container .review > p {
@@ -564,7 +564,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: -39%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-5.svg);
+  background-image: url(../images/deco-img-5.svg);
 }
 
 #testimonials .container-fluid .review-slider {
@@ -660,7 +660,7 @@ header .mobile-btn:hover span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(10deg);
-  background-image: url(/images/deco-img-6.svg);
+  background-image: url(../images/deco-img-6.svg);
 }
 
 #features .container .features-group {
@@ -713,7 +713,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: -13%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-7.svg);
+  background-image: url(../images/deco-img-7.svg);
 }
 
 #episodes .container .episodes-cards .episodes-card {
@@ -843,7 +843,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: -6%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-7.svg);
+  background-image: url(../images/deco-img-7.svg);
   transform: scaleX(-1);
 }
 
@@ -863,7 +863,7 @@ header .mobile-btn:hover span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
-  background-image: url(/images/deco-img-3-1.svg);
+  background-image: url(../images/deco-img-3-1.svg);
 }
 
 #pricing .container .pricing-cards::after {
@@ -876,7 +876,7 @@ header .mobile-btn:hover span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
-  background-image: url(/images/deco-img-4.svg);
+  background-image: url(../images/deco-img-4.svg);
 }
 
 #pricing .container .pricing-cards .pricing-card {
@@ -997,7 +997,7 @@ header .mobile-btn:hover span:nth-child(3) {
   background-size: contain;
   transform: rotate(23deg);
   z-index: -1;
-  background-image: url(/images/features-icon-6.svg);
+  background-image: url(../images/features-icon-6.svg);
 }
 
 #blog .container .blog-cards::after {
@@ -1011,7 +1011,7 @@ header .mobile-btn:hover span:nth-child(3) {
   background-size: contain;
   transform: rotate(140deg);
   z-index: -1;
-  background-image: url(/images/deco-img-6.svg);
+  background-image: url(../images/deco-img-6.svg);
 }
 
 #blog .container .blog-cards .blog-card {
@@ -1144,7 +1144,7 @@ header .mobile-btn:hover span:nth-child(3) {
   top: -93%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/deco-img-7.svg);
+  background-image: url(../images/deco-img-7.svg);
 }
 
 #cta .container-fluid .platform-group {
@@ -1174,38 +1174,38 @@ header .mobile-btn:hover span:nth-child(3) {
   filter: brightness(0);
 }
 
-#cta .container-fluid .left-img {
-  width: 35%;
+#cta .left-img {
+  width: 100%;
   height: 100%;
   position: absolute;
-  bottom: 0%;
-  left: 0%;
+  left: 0;
+  bottom: 0;
   z-index: 0;
 }
 
-#cta .container-fluid .left-img .phone {
-  width: 66%;
+#cta .left-img .phone {
+  width: 451px;
   position: absolute;
-  left: 2%;
-  bottom: -96%;
+  left: 40px;
+  bottom: -340px;
 }
 
-#cta .container-fluid .left-img .deco-big {
-  width: 21%;
+#cta .left-img .deco-big {
+  width: 165px;
   position: absolute;
-  left: 11%;
-  bottom: 55%;
+  left: 88px;
+  bottom: 390px;
 }
 
-#cta .container-fluid .left-img .deco-small {
-  width: 12%;
+#cta .left-img .deco-small {
+  width: 110px;
   position: absolute;
-  left: 30%;
-  bottom: 75%;
+  left: 240px;
+  bottom: 516px;
 }
 
-#cta .container-fluid .right-img {
-  width: 35%;
+#cta .right-img {
+  width: 100%;
   height: 100%;
   position: absolute;
   bottom: 0%;
@@ -1213,19 +1213,19 @@ header .mobile-btn:hover span:nth-child(3) {
   z-index: 0;
 }
 
-#cta .container-fluid .right-img .phone {
-  width: 100%;
+#cta .right-img .phone {
+  width: 662px;
   position: absolute;
-  right: -28%;
-  bottom: -65%;
+  right: -181px;
+  bottom: -219PX;
   z-index: 1;
 }
 
-#cta .container-fluid .right-img .deco-bundle {
-  width: 29%;
+#cta .right-img .deco-bundle {
+  width: 223px;
   position: absolute;
-  right: 45%;
-  bottom: -37%;
+  right: 300px;
+  bottom: -100px;
 }
 
 footer {
@@ -1510,26 +1510,15 @@ footer .container .copyright p a:hover {
     width: 42%;
     margin-bottom: 100px;
   }
-  #cta .container-fluid .left-img .phone {
-    width: 90%;
-    left: -5%;
-    bottom: -74%;
+  #cta .left-img {
+    transform: scale(0.7);
+    left: -171px;
+    bottom: -90px;
   }
-  #cta .container-fluid .left-img .deco-big {
-    bottom: 42%;
-  }
-  #cta .container-fluid .left-img .deco-small {
-    bottom: 54%;
-  }
-  #cta .container-fluid .right-img .phone {
-    width: 113%;
-    right: -37%;
-    bottom: -46%;
-  }
-  #cta .container-fluid .right-img .deco-bundle {
-    width: 37%;
-    right: 44%;
-    bottom: -38%;
+  #cta .right-img {
+    transform: scale(0.7);
+    bottom: -110px;
+    right: -210px;
   }
   footer .container .company-sitemap-platform-app .platform-app .platform {
     margin-bottom: 47px;
@@ -1752,17 +1741,15 @@ footer .container .copyright p a:hover {
     width: 49%;
     margin-bottom: 100px;
   }
-  #cta .container-fluid .left-img .phone {
-    bottom: -71%;
+  #cta .left-img {
+    transform: scale(0.5);
+    left: -198px;
+    bottom: -173px;
   }
-  #cta .container-fluid .left-img .deco-big {
-    bottom: 22%;
-  }
-  #cta .container-fluid .left-img .deco-small {
-    bottom: 33%;
-  }
-  #cta .container-fluid .right-img .phone {
-    bottom: -47%;
+  #cta .right-img {
+    transform: scale(0.5);
+    bottom: -188px;
+    right: -210px;
   }
   footer .container .company-sitemap-platform-app {
     margin-bottom: 100px;
@@ -2047,26 +2034,15 @@ footer .container .copyright p a:hover {
     left: 85%;
     top: -78%;
   }
-  #cta .container-fluid .left-img {
-    width: 45%;
+  #cta .left-img {
+    transform: scale(0.38);
+    left: -131px;
+    bottom: -214px;
   }
-  #cta .container-fluid .left-img .phone {
-    bottom: -92%;
-  }
-  #cta .container-fluid .left-img .deco-big {
-    bottom: -2%;
-  }
-  #cta .container-fluid .left-img .deco-small {
-    bottom: 8%;
-  }
-  #cta .container-fluid .right-img {
-    width: 50%;
-  }
-  #cta .container-fluid .right-img .phone {
-    bottom: -78%;
-  }
-  #cta .container-fluid .right-img .deco-bundle {
-    bottom: -64%;
+  #cta .right-img {
+    transform: scale(0.38);
+    bottom: -233px;
+    right: -138px;
   }
   footer .container .company-sitemap-platform-app .company {
     flex-direction: column;
@@ -2133,19 +2109,14 @@ footer .container .copyright p a:hover {
   #blog .container .blog-cards .blog-card .text-group h3 {
     font-size: 1.1rem;
   }
-  #cta .container-fluid .left-img .phone {
-    bottom: -73%;
+  #cta .left-img {
+    transform: scale(0.3);
+    left: -121px;
+    bottom: -214px;
   }
-  #cta .container-fluid .left-img .deco-big {
-    bottom: -7%;
-  }
-  #cta .container-fluid .left-img .deco-small {
-    bottom: 2%;
-  }
-  #cta .container-fluid .right-img .phone {
-    bottom: -61%;
-  }
-  #cta .container-fluid .right-img .deco-bundle {
-    bottom: -57%;
+  #cta .right-img {
+    transform: scale(0.3);
+    bottom: -233px;
+    right: -118px;
   }
 }
