@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>건양대학교병원</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+
+
+
+</head>
+
+<body id="main">
+
+  <!-- 공통 header area -->
+  <header id="header">
+    <div id="gnb">
+      <h1 class="logo" onclick="location.href='#'">건양대학교병원</a></h1>
+      <nav class="gnb-nav">
+        <ul>
+          <li class="gnb-list gnb-list1">
+            <a href="#">진료안내</a>
+            <div class="lnb lnb1">
+              <div class="container">
+                <div class="lnb-title">
+                  <h2>진료안내</h2>
+                  <p>진료예약을 편리하게 이용하실 수 있습니다.</p>
+                </div>
+                <div class="lnb-menu">
+                  <ul>
+                    <li><a href="#">진료과/의료진</a></li>
+                    <li><a href="#">암센터</a></li>
+                    <li><a href="#">전문센터</a></li>
+                    <li><a href="#">클리닉</a></li>
+                    <li><a href="#">진료절차안내</a></li>
+                    <li><a href="#">입/퇴원안내</a></li>
+                    <li><a href="#">검사실 이용안내</a></li>
+                    <li><a href="#">진료장비 안내</a></li>
+                    <li><a href="#">진료지원</a></li>
+                  </ul>
+                </div>
+                <div class="lnb-info">
+                  <div class="lnb-info-title">
+                    <h3><span>온라인 가족</span>이 되어주세요!</h3>
+                    <p>스마트한 온라인 서비스를 이용하실 수 있습니다.</p>
+                    <div class="login-join">
+                      <a class="btn btn1" href="#">로그인</a>
+                      <a class="btn btn2" href="#">회원가입</a>
+                    </div>
+                  </div>
+                  <div class="banner" onclick="window.open('#')">
+                    <img src="../images/lnb_imb01.jpg" alt="인터넷 진료예약 안내 서비스">
+                  </div>
+                  <div class="tell-chat">
+                    <img src="../images/call.png" alt="">
+                    <p>대표<br>전화</p>
+                    <em><strong>1577-3330</strong><br><span>365</span>일 <span>24</span>시간 예약가능</em>
+                    <a href="#">챗봇상담</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-list gnb-list2">
+            <a href="#">진료예약 및 조회</a>
+            <div class="lnb lnb2">
+              <div class="container">
+                <div class="lnb-title">
+                  <h2>진료예약 및 조회</h2>
+                </div>
+                <div class="lnb-menu">
+                  <div class="menu menu1">
+                    <h3><a href="#">예약안내</a></h3>
+                    <ul>
+                      <li><a href="#">전체 진료시간표</a></li>
+                      <li><a href="#">외래예약 안내</a></li>
+                      <li><a href="#">간편예약</a></li>
+                      <li><a href="#">인터넷진료예약</a></li>
+                      <li><a href="#">건강검진예약</a></li>
+                      <li><a href="#">국가건강검진 안내</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu menu2">
+                    <h3><a href="#">예약확인</a></h3>
+                    <ul>
+                      <li><a href="#">온라인 진료예약 확인</a></li>
+                      <li><a href="#">건강검진 예약 확인</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu menu3">
+                    <h3><a href="#">증명서 발급</a></h3>
+                    <ul>
+                      <li><a href="#">제증명 발급</a></li>
+                      <li><a href="#">의무기록사본 발급</a></li>
+                      <li><a href="#">진단서 발급</a></li>
+                      <li><a href="#">대리처방 안내</a></li>
+                      <li><a href="#">국제공인 예방접종 증명서 발급</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu menu4">
+                    <h3>비급여진료비</h3>
+                  </div>
+                </div>
+                <div class="lnb-info">
+                  <div class="banner" onclick="window.open('#')">
+                    <img src="../images/lnb_imb02.jpg" alt="증명서 발급 서비스. 병원발급 서류를 홈페이지에서 받으세요.">
+                  </div>
+                  <div class="lnb-btn">
+                    <a href="#" id="b1">간편예약</a>
+                    <a href="#" id="b2">인터넷예약</a>
+                    <a href="#" id="b3">예약현황</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="gnb-list gnb-list3">
+            <a href="#">이용안내</a>
+          </li>
+          <li class="gnb-list gnb-list4">
+            <a href="#">병원소개</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="login-menu">
+        <ul>
+          <li><a href="#" class="familysite">패밀리 사이트 바로가기</a></li>
+          <li class="line"><a href="#">로그인</a></li>
+          <li class="line"><a href="#">회원가입</a></li>
+          <li class="line"><a href="#">그룹웨어</a></li>
+          <li>
+            <a href="#" class="lang">KOR <i class="xi-caret-down-min"></i></a>
+            <div class="drop">
+              <a href="#" target="_blank">ENG</a>
+              <a href="#" target="_blank">CHN</a>
+              <a href="#" target="_blank">RUS</a>
+            </div>
+          </li>
+          <li><a href="#" class="search-icon"><img src="../images/search.png" alt="찾아보기"></a></li>
+          <li><a href="#" class="sitemap">사이트맵</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- side quick menu area -->
+  <div id="side-quickmenu">
+    <ul>
+      <li class="qm-up qm-sitemap"><a href="#" class="sitemap">사이트맵</a></li>
+      <li class="qm-up qm1"><a href="#">POPUP</a></li>
+      <li class="qm-up qm2"><a href="#">간편예약</a></li>
+      <li class="qm-up qm3"><a href="#">의료진검색</a></li>
+      <li class="qm-up qm4"><a href="#">진료과</a></li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>암센터</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>의생명 연구원</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>헬스케어 센터</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>진료협력 센터</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>진료 시간표</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+      <li class="qm-bo">
+        <a href="#" target="_black">
+          <span>증명서 발급</span>
+          <em class="blind">새 창</em>
+        </a>
+      </li>
+    </ul>
+
+    <div id="qm-inner">
+      <div class="qm-inner qm2-inner">
+        <div class="inner">
+          <h4>원활한 예약을 위해<br>전문상담사가 연락드립니다</h4>
+          <form action="" method="get">
+            <fieldset>
+              <legend>진료예약하기</legend>
+              <input type="tel" name="tel" placeholder="휴대폰번호를 입력하십시오.(숫자만)" required>
+              <p>개인정보 수집이용에 대한 안내</p>
+              <p>
+                오늘 및 내일 예약 신청은 불가능합니다.<br>
+                (<span>1577-3330</span> 전화예약 신청 가능)
+              </p>
+              <p>
+                간편예약 상담시간(일요일, 공휴일 제외)<br>
+                평일 : <span>08:30~17:30</span> / 토요일 : <span>08:30~12:30</span>
+              </p>
+              <button type="submit" class="btn btn1">예약하기</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="close">
+          <i class="xi-close"></i>
+        </div>
+      </div>
+      <div class="qm-inner qm3-inner">
+        <div class="inner">
+          <h4>의료진 찾기</h4>
+          <form action="">
+            <fieldset>
+              <legend>진료과 선택 및 의료진 검색</legend>
+              <p>
+                아래 그룹 및 부서를 통해 찾으시거나<br>
+                이름을 직접 입력하시어 의료진을 찾으실 수 있습니다
+              </p>
+              <select id="group-select" name="group">
+                <option value="">-- 선택 --</option>
+                <option value="g1">가정의학과</option>
+                <option value="g2">감염내과</option>
+                <option value="g3">내분비내과</option>
+                <option value="g4">류마티스내과</option>
+                <option value="g5">마취통증의학과</option>
+                <option value="g6">방사선종양학과</option>
+                <option value="g7">병리과</option>
+                <option value="g8">비뇨의학과</option>
+                <option value="g9">산부인과</option>
+                <option value="g10">성형외과</option>
+                <option value="g11">소아청소년과</option>
+                <option value="g12">신경과</option>
+                <option value="g13">신경외과</option>
+                <option value="g15">심장내과</option>
+                <option value="g16">안과</option>
+                <option value="g17">영상의학과</option>
+              </select>
+              <input type="text" name="doctor name" placeholder="찾으실 의료진 성명을 입력해주세요.">
+              <button type="submit" class="btn btn1">검색</button>
+              <button type="reset" class="btn btn2"><i class="xi-renew"></i> 검색 초기화</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="close">
+          <i class="xi-close"></i>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- reservation box area  -->
+  <div id="reservation-box">
+    <div class="left-box">
+      <div class="box">
+        <div class="box-inner">
+          <h2>첫 진료 간편예약</h2>
+          <form action="" method="post">
+            <fieldset>
+              <legend>첫 진료 간편예약 입력란</legend>
+              <input type="tel" name="tel" placeholder="휴대폰번호를 입력하십시오.(숫자만)" maxlength="11">
+              <input class="btn btn1" type="submit" value="간편예약">
+            </fieldset>
+          </form>
+          <p>
+            간편예약 상담시간 (일요일, 공휴일 제외)<br>평일 : <strong>08:30~17:30 </strong>토요일 : <strong>08:30~12:30</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-box">
+      <div class="box">
+        <div class="box-inner">
+          <h2>실시간 예약</h2>
+          <ul>
+            <li><a href="#">진료예약</a></li>
+            <li><a href="#">건강검진예약</a></li>
+          </ul>
+          <div class="tell-chat">
+            <img src="../images/call.png" alt="">
+            <p>대표<br>전화</p>
+            <em><strong>1577-3330</strong><br><span>365</span>일 <span>24</span>시간 예약가능</em>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- chatbot up btn area  -->
+  <div id="chatbot-up-btn">
+    <a href="#" class="chatbot"><span class="blind">챗봇상담하기</span></a>
+    <a href="#" class="up"><img src="../images/top-arrow.svg" alt="위로 가기"></a>
+  </div>
+
+
+
+  <!-- main view section area -->
+  <section id="mainview">
+    <div class="circle"></div>
+    <div class="swiper mainviewSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="text">
+            <span class="tt t1">BEST CARE, FAST CURE</span>
+            <p class="tt t2">마음을 담은 진료, 희망을 여는 병원</p>
+            <p class="tt t3">건양대학교병원</p>
+          </div>
+          <div class="img img1"><span class="blind">건양대학교병원 전경</span></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="text">
+            <span class="tt t1">World Class Quality With Love</span>
+            <p class="tt t2">가족 같은 사랑으로 신뢰받는</p>
+            <p class="tt t3">세계적 수준의 의료원</p>
+          </div>
+          <div class="img img2"><span class="blind">건양대학교병원 근경</span></div>
+        </div>
+      </div>
+      <div class="swiper-control">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-pause"><i class="xi-pause"></i></div>
+        <div class="swiper-button-next"></i></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- search section area -->
+  <section id="search">
+    <div class="container">
+      <div class="title">
+        <span>건양대학교병원에 진료를 위해 오셨나요?</span>
+        <h2><em>의료진/진료과/질환명</em>을 찾아보세요.</h2>
+      </div>
+      <form action="" method="get">
+        <fieldset>
+          <legend>의료진, 진료과, 질환명 검색하기</legend>
+          <input type="search" name="search" placeholder="예) 소화기내과, 소화불량, 담석증" maxlength="30">
+          <input type="submit" value="검색">
+        </fieldset>
+      </form>
+    </div>
+  </section>
+
+  <!-- guide section area -->
+  <section id="guide">
+    <div class="container">
+      <ul class="clear">
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>증명서발급</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>병원 둘러보기</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>전화번호 안내</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>찾아오시는 길</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>주차안내</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>채용안내</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>암센터</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>헬스케어센터</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"></span>
+            <p>장례식장</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- video section area -->
+  <section id="video">
+    <div class="container">
+      <div class="title">
+        <h2>KYUH<em> 건강 TV</em></h2>
+        <span>영상속 건양대학교병원의 의료진을 소개합니다.</span>
+      </div>
+
+      <div class="swiper videoSwiper">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-01.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>대전 MBC</span>
+              <h3>건강플러스 TV주치의 <무릎연부조직손상>
+              </h3>
+              <p><em>정형외과</em>유현진 교수</p>
+            </div>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-02.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>TJB</span>
+              <h3>메디컬 플러스 <대장암>
+              </h3>
+              <p><em>외과</em>노승재 교수</p>
+            </div>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-03.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>대전 MBC</span>
+              <h3>건강플러스 TV주치의 <이명>
+              </h3>
+              <p><em>이비인후과</em>김한태 교수</p>
+            </div>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-01.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>대전 MBC</span>
+              <h3>건강플러스 TV주치의 <무릎연부조직손상>
+              </h3>
+              <p><em>정형외과</em>유현진 교수</p>
+            </div>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-02.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>TJB</span>
+              <h3>메디컬 플러스 <대장암>
+              </h3>
+              <p><em>외과</em>노승재 교수</p>
+            </div>
+          </a>
+          <a class="swiper-slide" href="#" target="_blank">
+            <span class="blind">새 창</span>
+            <div class="thumb">
+              <div class="more"></div>
+              <img src="../images/home/thumb-03.png" alt="썸네일">
+            </div>
+            <div class="info">
+              <span>대전 MBC</span>
+              <h3>건강플러스 TV주치의 <이명>
+              </h3>
+              <p><em>이비인후과</em>김한태 교수</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-button-prev"><i class="xi-angle-left"></i></div>
+        <div class="swiper-button-next"><i class="xi-angle-right"></i></div>
+        <div class="swiper-scrollbar"></div>
+        <a href="#" class="more-btn">더보기 <i class='xi-plus'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- news section area -->
+  <section id="news">
+    <div class="circle"></div>
+    <div class="container">
+      <div class="title">
+        <h2>KYUH<em> 소식</em></h2>
+        <span>건양대학교병원의 소식 및 정보를 알려드립니다.</span>
+      </div>
+      <div class="contents clear">
+        <ul class="menu clear">
+          <li><a href="#">전체</a></li>
+          <li><a href="#">새소식</a></li>
+          <li><a href="#">언론보도</a></li>
+          <li><a href="#">채용안내</a></li>
+          <li><a href="#">입찰공고</a></li>
+        </ul>
+
+        <div class="news-list-group">
+          <ul class="news-list news-list1">
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3><span>한화종합연구소, 건양대병원에 성금 1500만원</span></h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="news-list news-list2">
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">새소식</span>
+                <span class="date">2022-03-03</span>
+                <h3>건양대학교병원 홈페이지가 새롭게 오픈하였습니다.</h3>
+                <p>
+                  건양대학교병원 홈페이지가 새롭게 오픈하였습니다.
+                  여러분의 많은 관심과 방문 부탁드립니다.
+                </p>
+              </a>
+            </li>
+            <a href="#" class="more-btn">더보기 <i class='xi-plus'></i></a>
+          </ul>
+          <ul class="news-list news-list3">
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="category">언론보도</span>
+                <span class="date">2022-04-22</span>
+                <h3>한화종합연구소, 건양대병원에 성금 1500만원 전달</h3>
+                <p>
+                  건양대병원이 21일 오후 2시 ㈜한화종합연구소로부터 저소득층 환자 의료비 성금을 전달받았다.
+                  기금 전달식에는 배장호 건양대 의료원장, 강주성 한화종합연구소 소장, 대전사회복지공동모금회 이은영 사무처장 등 3개 기관 관계자들이 참석했다.
+                  한화종합연구소는 가정형편이 어려워 제대로 치료를 받지 못하는 저소득층 환자들을 위해 임직원과 회사에서 마련한 1500만원을 기부했다.
+                  /이한영기자
+                </p>
+              </a>
+            </li>
+            <a href="#" class="more-btn">더보기 <i class='xi-plus'></i></a>
+          </ul>
+          
+        </div>
+
+        <div class="swiper newsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../images/home/popup-01.jpg" alt="보건복지부 3주기 의료기관평가 인증 획득! 환자 안전과 의료 서비스 질 우수">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../images/home/popup-02.jpg" alt="스마트 모바일 앱! 진료예약부터 처방약 조회까지 OK~">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <img src="../images/home/popup-03.jpg" alt="진단서 및 입퇴원 확인서 등 인터넷 증명서 재발급 서비스. 자세히보기">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../images/home/popup-04.jpg"
+                  alt="진찰은 환자 본인이 직접 받아야 합니다. 대리처방은 합법적인 조건을 모두 만족한 경우에만 가능합니다. 자세히보기">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="../images/home/popup-05.jpg" alt="중부권 최단기간 최다수술 기록 1000례 돌파! 로봇수술 다빈치 Xi">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-control-box">
+            <div class="swiper-text">팝업존</div>
+            <div class="swiper-control">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-pause"><i class="xi-pause"></i></div>
+              <div class="swiper-button-next"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 공통 footer area -->
+  <footer>
+    <div class="container">
+      <div class="foo-top">
+        <ul class="fnb">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#" class="point">개인정보처리방침</a></li>
+          <li><a href="#">환자권리장전</a></li>
+          <li><a href="#">병원윤리강령</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">찾아오시는길</a></li>
+          <li><a href="#">전화번호안내</a></li>
+          <li><a href="#" class="point">비급여안내</a></li>
+        </ul>
+
+        <div class="blog-site">
+          <a href="#" class="blog"><img src="../images/blog.png" alt="네이버 블로그"></a>
+          <div class="dropdown">
+            <button class="site-dropbtn">관련사이트<i class="xi-angle-up-min"></i></button>
+            <div class="dropdown-content">
+              <ul>
+                <li><a href="#">암센터</a></li>
+                <li><a href="#">진료협력센터</a></li>
+                <li><a href="#">헬스케어센터</a></li>
+                <li><a href="#">헬스케어데이터사이언스센터</a></li>
+                <li><a href="#">의생명연구원</a></li>
+                <li><a href="#">로봇수술센터</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">간호부</a></li>
+                <li><a href="#">의약품임상시험센터</a></li>
+                <li><a href="#">명곡의과학연구소</a></li>
+                <li><a href="#">인체유래물은행</a></li>
+                <li><a href="#">의료기기융합센터</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foo-bottom clear">
+        <div class="addr-copy">
+          <address>
+            (35365) 대전광역시 서구 관저동로 158<br>
+            건양대학교병원<span>대표전화: 1577-3330</span><span>응급센터: 042-600-9119,9139</span>
+          </address>
+          <p>COPYRIGHT 2022. KONYANG UNIVERSITY HOSPITAL. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="mark">
+          <ul>
+            <li>건강보험심사<br>평가원</li>
+            <li>보건복지부<br>의료기관평가</li>
+            <li>보건복지부<br>신생아집중치료센터</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+  
+  <!-- jQuery Insert -->
+  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- GSAP JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+  <script src="../js/swiper.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/animation.js"></script>
+  <script src="../js/mousemove.js"></script>
+</body>
+
+</html>

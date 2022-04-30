@@ -1,0 +1,185 @@
+/* ###### 공통 footer area ###### */
+footer {
+  padding-bottom: 65px;
+  color: #dcdcdc;
+  background-color: #383e3f;
+  position: relative;
+  z-index: 1;
+}
+
+/* footer top -------------- */
+footer .foo-top {
+  height: 80px;
+  border-bottom: 1px solid #666;
+}
+
+/* footer top .fnb -------- */
+footer .foo-top .fnb {
+  float: left;
+}
+
+footer .foo-top .fnb li {
+  width: auto;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+
+footer .foo-top .fnb li:not(:last-child):after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+  top: 39px;
+  right: -18px;
+}
+
+footer .foo-top .fnb li a {
+  display: block;
+  line-height: 80px;
+  color: #dcdcdc;
+}
+
+footer .foo-top .fnb li a:hover {
+  color: #949494
+}
+
+footer .foo-top .fnb li .point {
+  color: #97ce68;
+}
+
+footer .foo-top .fnb li .point:hover {
+  color: #5e9e27;
+}
+
+/* footer top .blog-site -------- */
+footer .foo-top .blog-site {
+  float: right;
+  position: relative;
+  top: 15px;
+}
+
+footer .foo-top .blog {
+  float: left;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+footer .foo-top .dropdown {
+  float: left;
+}
+
+footer .foo-top .dropdown .site-dropbtn {
+  width: 210px;
+  height: 47px;
+  padding: 15px;
+  text-align: left;
+  background-color: #383e3f;
+  border: 1px solid #666;
+  color: #dcdcdc;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+footer .foo-top .dropdown .site-dropbtn:hover {
+  background-color: #464c4e;
+}
+
+footer .foo-top .dropdown .site-dropbtn i {
+  float: right;
+  font-size: 1.6rem;
+}
+
+footer .foo-top .dropdown .dropdown-content {
+  display: none;
+  width: 210px;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer .foo-top .dropdown .dropdown-content ul {
+  height: 280px;
+  overflow-y: scroll;
+}
+
+footer .foo-top .dropdown .dropdown-content li {
+  height: 47px;
+  border-bottom: 1px solid #464c4e;
+  background-color: #282828;
+}
+
+footer .foo-top .dropdown .dropdown-content li:hover {
+  background-color: #4e4e4e;
+}
+
+footer .foo-top .dropdown .dropdown-content li a {
+  display: block;
+  line-height: 47px;
+  color: #fff;
+  font-size: 1.4rem;
+  text-indent: 15px;
+}
+
+/* footer bottom -------------- */
+footer .foo-bottom {
+  margin-top: 26px;
+}
+
+footer .foo-bottom .addr-copy {
+  float: left;
+}
+
+footer .foo-bottom .addr-copy address {
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+footer .foo-bottom .addr-copy address span {
+  display: inline-block;
+  margin-left: 9px;
+}
+
+footer .foo-bottom .addr-copy p {
+  color: #666;
+}
+
+footer .foo-bottom .mark {
+  float: right;
+}
+
+footer .foo-bottom .mark li {
+  height: 50px;
+  float: left;
+  color: #949494;
+  padding-left: 60px;
+  position: relative;
+}
+
+footer .foo-bottom .mark li:not(:last-child) {
+  margin-right: 35px;
+}
+
+footer .foo-bottom .mark li::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: no-repeat 0 0 url(../images/mark.png);
+}
+
+footer .foo-bottom .mark li:nth-child(2):after {
+  background-position: -50px 0;
+}
+
+footer .foo-bottom .mark li:nth-child(3):after {
+  background-position: -100px 0;
+}

@@ -1,0 +1,299 @@
+/* ******************* 공통영역 선언시작 **************** */
+html,
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222222;
+}
+
+/* form -------------------------- */
+input {
+  border: 1px solid #e9e9e9;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.5rem;
+}
+
+input:hover {
+  border-color: #006940;
+}
+
+input:focus {
+  border-color: #222222;
+}
+
+select {
+  border: 1px solid #e9e9e9;
+  font-size: 1.4rem;
+  color: #222222;
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 23px;
+}
+
+/* IE */
+select::-ms-expand {
+  display: none;
+}
+
+select:hover {
+  border-color: #006940;
+}
+
+select:active {
+  border-color: #222222;
+}
+
+
+/* container---------------------- */
+.container {
+  width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* button -------------------------- */
+.btn {
+  width: 49%;
+  height: 52px;
+  display: inline-block;
+  text-align: center;
+  line-height: 52px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn1 {
+  float: left;
+  background-color: #006940;
+  color: #fff;
+}
+
+.btn2 {
+  float: right;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  color: #777;
+}
+
+.btn1:hover {
+  background-color: #1a7853;
+}
+
+.btn2:hover {
+  background-color: #f9f9f9;
+  color: #006940;
+}
+
+/* side-quickmenu close btn */
+.close {
+  width: 70px;
+  height: 70px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  right: 470px;
+  line-height: 70px;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/*  more-btn --------------------- */
+.more-btn {
+  color: #888;
+  position: absolute;
+  right: 0;
+  top: -65px;
+  font-size: 1.5rem;
+}
+
+.more-btn i {
+  font-size: 2rem;
+  position: relative;
+  top: 2px;
+}
+
+.more-btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: rgba(125, 193, 67, 0.3);
+  z-index: -1;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.more-btn:hover:after {
+  width: 100%;
+}
+
+/* tell-chat -------------- */
+.tell-chat {
+  width: 100%;
+  height: 46px;
+}
+
+.tell-chat img {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 4px;
+}
+
+.tell-chat p {
+  display: inline-block;
+  font-family: 'GmarketSansMedium';
+  font-size: 1.8rem;
+  line-height: 1.4;
+  position: relative;
+  top: -5px;
+  margin-right: 4px;
+}
+
+.tell-chat em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: #777;
+  margin-right: 4px;
+  position: relative;
+  top: -3px;
+}
+
+.tell-chat em strong {
+  font-family: 'GmarketSansBold';
+  font-size: 2.4rem;
+  color: #101010;
+  line-height: 1;
+}
+
+.tell-chat em span {
+  color: #006940;
+}
+
+
+.tell-chat a {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  background-color: #006940;
+  border-radius: 22px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  position: relative;
+  top: -16px;
+}
+
+
+/* swiper 공통 --------------- */
+.swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: flex-start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  width: auto;
+  font-family: 'GmarketSansMedium';
+}
+
+/* 기본 화살표 제거 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: '';
+}
+
+
+/* title 공통 --------------------- */
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title h2 {
+  width: auto;
+  font-size: 3.4rem;
+  font-family: 'GmarketSansBold';
+  line-height: 1.2;
+}
+
+.title h2 em {
+  position: relative;
+  color: #006940;
+  font-style: normal;
+}
+
+.title h2 em::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #026940;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.title span {
+  display: block;
+  font-size: 1.9rem;
+  color: #494949;
+}
+
+/*  addClass----------------------- */
+.active {
+  display: block !important;
+}
+
+.bg-black::after {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reversed {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
