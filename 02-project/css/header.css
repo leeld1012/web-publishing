@@ -255,6 +255,9 @@ header .lnb .lnb-menu .menu {
 header .lnb .lnb-menu .menu h3 {
   margin-bottom: 10px;
 }
+header .lnb .lnb-menu .menu h3 a:hover {
+  color: #1a7853;
+}
 
 header .lnb .lnb-menu .menu li {
   display: inline-block;
@@ -280,6 +283,11 @@ header .lnb .lnb-menu .menu li::before {
 header .lnb .lnb-menu li a {
   display: block;
   color: #666;
+}
+
+header .lnb .lnb-menu li a:hover {
+  color: #1a7853;
+  font-weight: 500;
 }
 
 /* lnb info ------------------ */
@@ -328,6 +336,11 @@ header .lnb .lnb-info .lnb-btn a {
   color: #777;
   text-align: center;
   position: relative;
+}
+
+header .lnb .lnb-info .lnb-btn a:hover {
+  color: #026940;
+  font-weight: 500;
 }
 
 header .lnb .lnb-info .lnb-btn a::before {
