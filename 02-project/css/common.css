@@ -194,6 +194,10 @@ select:active {
   top: -16px;
 }
 
+.tell-chat a:hover {
+  background-color: #1a7853;
+}
+
 
 /* swiper 공통 --------------- */
 .swiper {
@@ -237,6 +241,10 @@ select:active {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: '';
+}
+
+.swiper-play {
+  display: none;
 }
 
 
