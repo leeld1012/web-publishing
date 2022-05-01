@@ -5,36 +5,36 @@ $(function () {
   const header = $('header');
 
   gnbBtn.eq(0).hover(function(){
-    $(this).find('.lnb').stop().fadeIn(300)
-    header.addClass('bg-black')
+    $(this).find('.lnb').stop().fadeIn(200)
+    header.css({'z-index': 300}).addClass('bg-black')
   },function(){
-    $(this).find('.lnb').stop().fadeOut(300)
-    header.removeClass('bg-black')
+    $(this).find('.lnb').stop().fadeOut(200)
+    header.removeClass('bg-black').css({'z-index': 100})
   });
 
   gnbBtn.eq(1).hover(function(){
-    $(this).find('.lnb').stop().fadeIn(300)
-    header.addClass('bg-black')
+    $(this).find('.lnb').stop().fadeIn(200)
+    header.css({'z-index': 300}).addClass('bg-black')
   },function(){
-    $(this).find('.lnb').stop().fadeOut(300)
-    header.removeClass('bg-black')
+    $(this).find('.lnb').stop().fadeOut(200)
+    header.removeClass('bg-black').css({'z-index': 100})
   });
 
   // lnb 3, 4 작업시
   // gnbBtn.eq(2).hover(function(){
-  //   $(this).find('.lnb').stop().fadeIn(300)
-  //   header.addClass('bg-black')
+  //   $(this).find('.lnb').stop().fadeIn(200)
+  //   header.css({'z-index': 300}).addClass('bg-black')
   // },function(){
-  //   $(this).find('.lnb').stop().fadeOut(300)
-  //   header.removeClass('bg-black')
+  //   $(this).find('.lnb').stop().fadeOut(200)
+  //   header.removeClass('bg-black').css({'z-index': 100})
   // });
 
   // gnbBtn.eq(3).hover(function(){
-  //   $(this).find('.lnb').stop().fadeIn(300)
-  //   header.addClass('bg-black')
+  //   $(this).find('.lnb').stop().fadeIn(200)
+  //   header.css({'z-index': 300}).addClass('bg-black')
   // },function(){
-  //   $(this).find('.lnb').stop().fadeOut(300)
-  //   header.removeClass('bg-black')
+  //   $(this).find('.lnb').stop().fadeOut(200)
+  //   header.removeClass('bg-black').css({'z-index': 100})
   // });
 
 
